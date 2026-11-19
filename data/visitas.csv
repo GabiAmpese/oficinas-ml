@@ -1,0 +1,476 @@
+fonte,oficina,veiculo,marca,modelo,ano,motor,combustivel,data,leitura,unidade,servico,troca_oleo,tipo_oleo,viscosidade,intervalo_rec_unid,intervalo_rec_meses,uso,aplicativo,frota,garagem,cidade,voltou_no_prazo,observacoes
+AMPESE,Ampese,AMPESE_V001,Toyota,Hilux,2006.0,3.0,Diesel,2024-12-18,243900.0,km,Troca de óleo + filtros,True,Mineral,15W40,10000.0,6.0,Misto,Não,Não,Não,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V001,Toyota,Hilux,2006.0,3.0,Diesel,2025-06-23,248600.0,km,Troca de óleo + filtros,True,Mineral,15W40,10000.0,6.0,Misto,Não,Não,Não,São Domingos do Sul,No prazo,Voltou nos 6 meses com ~4.700 km rodados.
+AMPESE,Ampese,AMPESE_V001,Toyota,Hilux,2006.0,3.0,Diesel,2025-08-21,250100.0,km,Filtro de combustível,False,Mineral,15W40,10000.0,6.0,Misto,Não,Não,Não,São Domingos do Sul,Antes,
+AMPESE,Ampese,AMPESE_V001,Toyota,Hilux,2006.0,3.0,Diesel,2025-10-24,251700.0,km,Troca de óleo + filtros,True,Mineral,15W40,10000.0,6.0,Misto,Não,Não,Não,São Domingos do Sul,Antes,"Folga na Turbina, óleo passando direto para escapamento gerando fumaça azul da queima. Volta antecipada devido ao baixo nível de óleo"
+AMPESE,Ampese,AMPESE_V002,Ford,F1000,1984.0,3.6,Diesel,2025-10-15,318400.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,"Camionete faz entrega de butijão de gases, circula muito dentro da cidade."
+AMPESE,Ampese,AMPESE_V002,Ford,F1000,1984.0,3.6,Diesel,2026-02-13,323400.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,5.000 km em 4 meses.
+AMPESE,Ampese,AMPESE_V002,Ford,F1000,1984.0,3.6,Diesel,2026-06-12,328300.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V002,Ford,F1000,1984.0,3.6,Diesel,2026-10-13,334500.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,Atrasado,"Passou ~1.200 km do intervalo. Roda mais que a média, atinge os 5.000 km bem antes dos 6 meses."
+AMPESE,Ampese,AMPESE_V003,Chevrolet,Silverado,2001.0,4.2,Diesel,2025-11-21,287600.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,"Camionete de pedreira, roda mais que o normal."
+AMPESE,Ampese,AMPESE_V003,Chevrolet,Silverado,2001.0,4.2,Diesel,2026-04-03,292300.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V003,Chevrolet,Silverado,2001.0,4.2,Diesel,2026-08-29,296900.0,km,Suspensão,False,,,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,Antes,"Não feita a troca de óleo, volta antecipada devido a outros problemas."
+AMPESE,Ampese,AMPESE_V003,Chevrolet,Silverado,2001.0,4.2,Diesel,2026-09-19,297600.0,km,Troca de óleo + filtros,True,Mineral,15W40,5000.0,6.0,Misto,Não,Não,Sim,São Domingos do Sul,Atrasado,5.300 km desde a última troca.
+AMPESE,Ampese,AMPESE_V004,Fiat,Mobi,2018.0,1.0,Flex,2025-11-07,268400.0,km,Troca de óleo + filtros,True,Sintético,5W30,10000.0,12.0,Cidade,Sim,Não,Não sei,São Domingos do Sul,Atrasado,Este veículo é o único da cidade que trabalha como Táxi.
+AMPESE,Ampese,AMPESE_V004,Fiat,Mobi,2018.0,1.0,Flex,2026-02-06,281100.0,km,Troca de óleo + filtros,True,Sintético,5W30,10000.0,12.0,Cidade,Sim,Não,Não sei,São Domingos do Sul,Atrasado,"Roda ~140 km/dia; passa dos 10.000 km em cerca de 70 dias, muito antes dos 12 meses."
+AMPESE,Ampese,AMPESE_V004,Fiat,Mobi,2018.0,1.0,Flex,2026-05-08,293900.0,km,Troca de óleo + filtros,True,Sintético,5W30,10000.0,12.0,Cidade,Sim,Não,Não sei,São Domingos do Sul,Atrasado,
+AMPESE,Ampese,AMPESE_V004,Fiat,Mobi,2018.0,1.0,Flex,2026-08-07,306500.0,km,Troca de óleo + filtros,True,Sintético,5W30,10000.0,12.0,Cidade,Sim,Não,Não sei,São Domingos do Sul,Atrasado,
+AMPESE,Ampese,AMPESE_V004,Fiat,Mobi,2018.0,1.0,Flex,2026-10-30,317900.0,km,Troca de óleo + filtros,True,Sintético,5W30,10000.0,12.0,Cidade,Sim,Não,Não sei,São Domingos do Sul,Atrasado,"Veio um pouco antes das vezes anteriores, ainda assim 1.400 km acima do recomendado."
+AMPESE,Ampese,AMPESE_V005,Volkswagen,Santana,1997.0,2.0,Gasolina,2024-04-05,60200.0,km,Troca de óleo + filtros,True,Semissintético,15W40,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,No prazo,"Carro de uso leve, anda pouco."
+AMPESE,Ampese,AMPESE_V005,Volkswagen,Santana,1997.0,2.0,Gasolina,2025-04-11,65000.0,km,Troca de óleo + filtros,True,Semissintético,15W40,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,No prazo,"Voltou pelos 12 meses, com menos de 5.000 km rodados."
+AMPESE,Ampese,AMPESE_V005,Volkswagen,Santana,1997.0,2.0,Gasolina,2026-04-24,70000.0,km,Troca de óleo + filtros,True,Semissintético,15W40,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V006,Volkswagen,Passat,2012.0,2.0,Gasolina,2024-05-10,114600.0,km,Troca de óleo + filtros,True,Sintético,5W40,10000.0,12.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V006,Volkswagen,Passat,2012.0,2.0,Gasolina,2025-05-16,120000.0,km,Troca de óleo + filtros,True,Sintético,5W40,10000.0,12.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,"Segue o prazo do fabricante pelo tempo (12 meses), roda ~5.000 km/ano."
+AMPESE,Ampese,AMPESE_V006,Volkswagen,Passat,2012.0,2.0,Gasolina,2026-05-15,125000.0,km,Troca de óleo + filtros,True,Sintético,5W40,10000.0,12.0,Misto,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V007,Volkswagen,Gol,2010.0,1.0,Flex,2025-03-14,184543.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Misto,Não,Não,Não,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V007,Volkswagen,Gol,2010.0,1.0,Flex,2025-11-21,192118.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Misto,Não,Não,Não,São Domingos do Sul,Antes,Voltou com 8 meses e ~7.600 km.
+AMPESE,Ampese,AMPESE_V007,Volkswagen,Gol,2010.0,1.0,Flex,2026-02-20,194900.0,km,Freios,False,,,10000.0,12.0,Misto,Não,Não,Não,São Domingos do Sul,Antes,"Só freios, sem troca de óleo."
+AMPESE,Ampese,AMPESE_V007,Volkswagen,Gol,2010.0,1.0,Flex,2026-07-10,199100.0,km,Palhetas,False,,,10000.0,12.0,Misto,Não,Não,Não,São Domingos do Sul,Antes,
+AMPESE,Ampese,AMPESE_V007,Volkswagen,Gol,2010.0,1.0,Flex,2026-10-23,202300.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Misto,Não,Não,Não,São Domingos do Sul,No prazo,"~10.200 km desde a última troca, 11 meses."
+AMPESE,Ampese,AMPESE_V008,Ford,Focus,2018.0,2.0,Flex,2024-07-12,73900.0,km,Troca de óleo + filtros,True,Sintético,5W20,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,No prazo,
+AMPESE,Ampese,AMPESE_V008,Ford,Focus,2018.0,2.0,Flex,2025-07-18,79300.0,km,Troca de óleo + filtros,True,Sintético,5W20,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,No prazo,Voltou nos 12 meses com ~5.400 km.
+AMPESE,Ampese,AMPESE_V008,Ford,Focus,2018.0,2.0,Flex,2026-10-13,86116.0,km,Troca de óleo + filtros,True,Sintético,5W20,10000.0,12.0,Cidade,Não,Não,Sim,São Domingos do Sul,Atrasado,"Passou 15 meses desde a última troca (atrasou pelo tempo, não pelo km)."
+AMPESE,Ampese,AMPESE_V009,Fiat,Strada,2015.0,1.4,Flex,2025-01-17,142300.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Terra,Não,Não,Não,Interior de São Domingos do Sul,No prazo,"Picape de propriedade rural, roda em estrada de chão."
+AMPESE,Ampese,AMPESE_V009,Fiat,Strada,2015.0,1.4,Flex,2025-09-26,153700.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Terra,Não,Não,Não,Interior de São Domingos do Sul,Atrasado,~11.400 km em 8 meses.
+AMPESE,Ampese,AMPESE_V009,Fiat,Strada,2015.0,1.4,Flex,2026-05-22,164600.0,km,Troca de óleo + filtros,True,Semissintético,10W40,10000.0,12.0,Terra,Não,Não,Não,Interior de São Domingos do Sul,Atrasado,
+AMPESE,Ampese,AMPESE_V009,Fiat,Strada,2015.0,1.4,Flex,2026-08-14,168300.0,km,Revisão geral,False,,,10000.0,12.0,Terra,Não,Não,Não,Interior de São Domingos do Sul,Antes,"Revisão antes da colheita, sem troca de óleo."
+CIROCAR,Cirocar,CIROCAR_V001,Chevrolet,Corsa,,,,2021-08-19,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V002,Volkswagen,Gol,,,,2021-08-17,,km,Outro,False,,,,,,,Não,,Centenario,,"Peças: BUCHAS DE BANDEJA, COXINS DO AMORTECEDOR, PIVO, SENSOR DO MARCADOR DE COMBUSTI; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V003,Chevrolet,Vectra,,,,2026-03-09,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: CAIXA DE DIRECAO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V004,Fiat,Uno,,,,2022-02-14,,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: MACANETA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V004,Fiat,Uno,,,,2022-06-15,,km,Troca de óleo,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V004,Fiat,Uno,,,,2023-01-10,115758.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES TRASEIROS, BATENTE TRASEIRO, BIELETAS, BUCHAS DE BANDEJA, CUBO TRASEIRO, FITA E "
+CIROCAR,Cirocar,CIROCAR_V004,Fiat,Fiat Uno,,,,2023-02-27,124453.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: ROLAMENTO TRAS., SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V005,Volkswagen,Golf Sportline,,,,2022-01-25,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V006,Ford,Fiesta,,,,2026-04-30,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, BIELETAS, COXINS DOS AMORTECEDORES DIANT, GARFO DA 5 MARCHA, JOGO DE DISCOS DE FREIO, JOGO DE ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V007,Fiat,Uno,,,,2021-12-13,76393.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: FLUIDO DE FREIO, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V007,Fiat,Uno,,,,2022-04-26,90063.0,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: BIELETA
+CIROCAR,Cirocar,CIROCAR_V007,Fiat,Fiat Uno,,,,2022-09-15,105131.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V007,Fiat,Uno,,,,2022-09-28,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CUBO DE RODA LADO ESQ,, JOGO DE PALHETAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V007,Fiat,Uno,,,,2023-08-30,144778.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: OLEO HIDRAULICO, REPARO SETOR, SUPORTE DESCARGA"
+CIROCAR,Cirocar,CIROCAR_V008,Volkswagen,Saveiro 2020 Modelo 21,,,,2021-10-08,62000.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Cambe,,
+CIROCAR,Cirocar,CIROCAR_V009,Volkswagen,Gol,,,,2024-11-13,113886.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ALAVANCA DO FREIO DE MAO, BOBINA DE IGNICAO, JOGO DE CABO DE VELA, JOGO DE VELA"
+CIROCAR,Cirocar,CIROCAR_V009,Volkswagen,Gol,,,,2026-02-23,182371.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V010,Chevrolet,S10,,,,2021-12-28,,km,Outro,False,,,,,,,Não,,Santa Cecilia Do Sul,,"Peças: JOGO DE JUNTAS, JOGO DE VELAS, PECAS RETIFICAS, SELO D'AGUA, TUCHOS DAS VELAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V011,Volkswagen,Golf,,,,2023-08-30,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V012,Chevrolet,Astra,,,,2021-10-28,156184.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V013,Ford,Ka,,,,2026-10-14,,km,Troca de óleo + filtro,True,,,,,,,Não,,Santa Cecília Do Sul,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V014,Toyota,Corolla,2003.0,,,2021-08-17,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, BATENTE DO AMORTECEDOR DIANTEI, BIELETAS, BUCHAS DE BANDEJA, BUCHAS DO EIXO TRAS, BUCHAS DO ES; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V015,Ford,Focus,,,,2026-05-21,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V015,Ford,Focus,,,,2026-07-08,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: HOMOCINETICA, PIVO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V016,Toyota,Corolla,,,,2024-10-31,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V017,Volkswagen,Polo,,,,2024-10-31,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CONDENSADOR DE AR, JOGO DE DISCO DE FREIO, JOGO DE PASTILHAS, PIVOS, TERMINAL DE DIRECAO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V018,Toyota,Corolla Ano: 1994,1994.0,,,2021-05-31,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CUBO DE RODA TRAS., JOGO DE DISCO DE FREIO, JOGO DE PASTILHA DE FREIO, ROLAMENTO DE RODA DIANT., SILICONE E FITA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V018,Toyota,Corolla Ano: 1994,1994.0,,,2021-06-29,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: MANGA DO HIDRAULICO E TORNO, OLEO HIDRAULICO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V019,Volkswagen,Gol,,,,2025-01-21,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: ADITIVO RADIADOR, MANGUEIRA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V020,Volkswagen,Gol,,,,2026-04-07,,km,Troca de óleo + filtro,True,,,,,,,Não,,Santa Cecília Do Sul,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V021,,Tiggo,,,,2024-12-12,,km,Outro,False,,,,,,,Não,,Sertão,,Peças: VALVULA TERMOSTATICA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V022,Volkswagen,Jetta,,,,2021-09-28,,km,Troca de óleo,True,,,,,,,Não,,Charrua,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V023,Honda,Civic,,,,2024-08-12,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES TRASEIROS, BIELETAS DIANT. E TRAS., BRACOS DO SETOR, COXINS DO AMORTECEDORES DIA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V024,Chevrolet,Cruze,,,,2026-07-14,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V025,,Santa Fe,,,,2021-08-17,,km,Troca de óleo + filtro,True,,,,,,,Não,,Coxilha,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V026,Volkswagen,Gol,,,,2026-07-30,47379.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V026,Volkswagen,Gol,,,,2026-09-04,57093.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V026,Volkswagen,Gol,,,,2026-10-08,66213.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V027,Volkswagen,Polo,,,,2026-07-30,28509.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V028,Chevrolet,Cruze,,,,2022-09-15,,km,Outro,False,,,,,,,Não,,Agua Santa,,"Peças: AMORTECEDORES DIANTEIROS, BATENTES DO AMORTECEDORES, BIELETAS, COXINS DO AMORTECEDOR, ESCAPAMENTO COMPLETO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V029,Fiat,Fiorino,,,,2022-08-08,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: FILTRO DA GASOLINA, FILTRO DO AR, JOGO DE PATINS DE FREIO, SILICONE PASTILHA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V029,Fiat,Fiorino,,,,2024-12-10,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ADITIVO, CANO D'AGUA, COLA, FLUIDO DE FREIO E CINTA PLASTI, SELO D'AGUA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V030,Volkswagen,Kombi,,,,2021-09-08,,km,Outro,False,,,,,,,Não,,Passo Fundo,,Peças: HOMOCINETICA TRAS. LD.; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V030,Volkswagen,Kombi,,,,2022-10-17,,km,Troca de óleo + filtro,True,,,,,,,Não,,Passo Fundo,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V031,,Corcel,,,,2024-01-16,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: KIT COMPLETO DE EMBREAGEM; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V032,Volkswagen,Gol Quadrado,,,,2021-04-26,,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: COLA TEMPERATURA, ROLAMENTO DIANTEIRO ESQUERDO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V033,Chevrolet,Corsa,,,,2026-06-18,199367.0,km,Troca de filtro de óleo,False,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V034,,Pampa,,,,2023-08-14,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: FLUIDO DE FREIO, KIT RODA TRAS., PANELA TRAS., PARAFUSO PIVO, PINO DO PATIM DE FREIO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V035,Chevrolet,Vectra,,,,2025-02-14,193210.0,km,Troca de filtro de óleo,False,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V036,Fiat,Fiorino,,,,2026-08-04,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: KIT DE EMBREAGEM; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V037,Ford,Ford Ka,,,,2021-10-13,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: KIT COMPLETO EMBREAGEM COM ATU; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V038,Volkswagen,Saveiro,,,,2026-04-07,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, COXINS DOS AMORTECEDORES, FITA E SILICONE, KIT BUCHA ALAVANCA DE MARCHA, KIT COIFA E BATENTE, ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V038,Volkswagen,Saveiro,,,,2026-07-02,163228.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ANEL DE VEDACAO DO TANQUE, BUCHAS DA BARRA DE DIRECAO"
+CIROCAR,Cirocar,CIROCAR_V039,Volkswagen,Gol,,,,2026-04-24,,km,Troca de óleo,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V040,,Stilo,,,,2026-03-23,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CILINDRO DE EMBREAGEM SUPERIOR, FLUIDO DE FREIO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V040,,Stilo,,,,2026-06-12,209402.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V041,Toyota,Corolla,,,,2021-11-30,221952.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V042,Volkswagen,Kombi,,,,2022-09-21,,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V043,Ford,Fiesta,,,,2021-09-08,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V044,Toyota,Corolla,,,,2025-03-09,181394.0,km,Troca de óleo,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V045,Chevrolet,Vectra,,,,2022-07-05,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V046,Volkswagen,Gol,,,,2022-07-28,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V047,Fiat,Doblo,,,,2021-06-21,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V048,,Bora,,,,2026-07-23,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BUCHAS DE BANDEJA, CORREIA DO ALTERNADOR, COXIM DA CAIXA, DISCO DE FREIO, HOMOCINETICA, MALHA DA DESCARGA, OLEO HIDRAULI; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V049,Volkswagen,Gol,,,,2026-07-02,641286.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BOMBA DE COMBUSTIVEL, BORRACHA DA BOMBA DE COMBUSTIV, CORREIA DO ALTERNADOR, FLANGE, JOGO DE CABO DE VELAS, JOGO DE VELA"
+CIROCAR,Cirocar,CIROCAR_V050,Fiat,Strada,,,,2026-08-14,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: TUBO D'AGUA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2021-04-26,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: SELO D'AGUA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2022-05-16,85303.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ADITIVO PARA RADIADOR, RADIADOR"
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2022-08-05,85428.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: JOGO DE VELA, SELO D'AGUA, SUPORTE DA CAXIA, SUPORTE DO MOTOR"
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2023-03-27,86115.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2024-11-13,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V051,Fiat,Uno,,,,2025-06-13,89212.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: DESCARGA INTERMEDIARIA, DESCARGA TRAS."
+CIROCAR,Cirocar,CIROCAR_V052,Volkswagen,Gol,,,,2026-03-10,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V053,Volkswagen,Saveiro,,,,2024-11-05,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: BIELETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V054,Fiat,Strada,,,,2021-08-26,,km,Outro,False,,,,,,,Não,,Erechim,,"Peças: CUBO TRASEIRO, SUPORTE DA CAIXA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V055,Volkswagen,Gol,,,,2020-12-10,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BATENTES DIANT, BUCHA DE BANDEJA, BUCHA DO EIXO, COIFA DO AMORTECEDOR DIANT., CORREIA DENTADA, COXIM DO AMORTECEDOR DIAN; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V055,Volkswagen,Gol,,,,2021-04-27,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES TRAS., BOBINA, BUCHAS DO EIXO TRAS., CILINDRO TRAS., FLEXIVEL DE FREIO, JOGO DE CABOS DE VELA, KIT AMORTEC; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V055,Volkswagen,Gol,,,,2021-08-06,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CALOTA DE RODA, CILINDRO TRAS, COIFA DE RODA, COXINS DO AMORTECEDORES, JOGO DE LONA, JOGO DE PASTILHA DE FREIO, KIT COIF; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V056,Volkswagen,Gol,,,,2021-12-15,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V057,Renault,Logan,,,,2022-11-18,122224.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V057,Renault,Logan,,,,2024-09-12,,km,Outro,False,,,,,,,Não,,Ibiaçá,,"Peças: AMORTECEDORES DIANT., BIELETAS, KIT ESTABILIZADORES, SILICONE; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V058,Volkswagen,Fox,,,,2023-02-22,,km,Troca de óleo + filtro,True,,,,,,,Não,,Agua Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V059,Volkswagen,Voyage,,,,2026-06-10,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V060,Chevrolet,Prisma,,,,2026-10-30,,km,Outro,False,,,,,,,Não,,Paim Filho,,"Peças: CANO HIDRAULICO, OLEO HIDRAULICO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V061,,Megane,,,,2023-08-30,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,"Peças: AMORTECEDORES TRASEIROS, BIELETAS, BUCHAS DE BANDEJAS, COXINS DO AMORTECEDOR, FLUIDO DE FREIO, JOGO DE PASTILHAS DE FREI; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V062,Volkswagen,Saveiro,,,,2022-12-20,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V063,Chevrolet,Vectra Seda Elegance Ano: 2011,2011.0,,,2021-05-31,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V064,Fiat,Palio,,,,2023-03-28,117392.0,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: FLUIDO DE FREIO, JOGO DE PATINS DE FREIO, SILICONE E FITA, TANQUE DE COMBUSTIVEL"
+CIROCAR,Cirocar,CIROCAR_V064,Fiat,Palio,,,,2023-08-14,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: BARRA AXIAL, BIELETAS, KIT DE EMBREAGEM, MOLAS TRAS., TANQUE DE COMBUSTIVEL; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V065,Ford,Fiesta,,,,2021-01-12,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ADITIVO, BOMBA D'AGUA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V066,Renault,Duster,,,,2024-12-09,,km,Outro,False,,,,,,,Não,,Ibiaçá,,Peças: SEMIEIXO COMPLETO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V067,Renault,Duster,,,,2024-10-08,,km,Troca de óleo + filtro,True,,,,,,,Não,,Ibiaçá,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V067,Renault,Duster,,,,2025-01-14,,km,Outro,False,,,,,,,Não,,Ibiaçá,,"Peças: CILINDRO TRAS, FLUIDO DE FREIO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V067,Renault,Duster,,,,2025-02-17,,km,Outro,False,,,,,,,Não,,Ibiaçá,,"Peças: CILINDRO DE RODA TRAS. L.D, FLUIDO DE FREIO E CINTA PLASTI; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V067,Renault,Duster,,,,2025-05-27,,km,Outro,False,,,,,,,Não,,Ibiaçá,,Peças: LUVA C/ TULIPA L.DIREITO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V068,Toyota,Corolla,,,,2021-09-09,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: KIT ESTABILIZADOR DIAN., SETOR; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V069,Chevrolet,Spin,,,,2026-09-29,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: JOGO DE DISCOS E PASTILHAS DE , SILICONE E FLUIDO DE FREIO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V070,Fiat,Uno,,,,2021-02-25,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V070,Fiat,Uno,,,,2021-06-29,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES TRASEIROS, BUCHAS DE BANDEJAS, COXINS DOS AMORTECEDORES, CUBO DE RODA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V071,Chevrolet,Agile,,,,2022-03-30,,km,Troca de óleo + filtro,True,,,,,,,Não,,Agua Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V072,Fiat,Strada,,,,2020-12-10,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDOR TRAS, COXIM DO AMORTECEDOR DIANT., PARAFUSO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V073,Ford,Ka,,,,2022-01-12,55374.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V073,Ford,Ka,,,,2022-05-16,56326.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: JOGO DE PASTILHAS DE FREIO, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V073,Ford,Ka,,,,2022-08-05,56930.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: PARAFUSO E POLCA, ROLAMENTO"
+CIROCAR,Cirocar,CIROCAR_V073,Ford,Ka,,,,2022-10-13,57372.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: KIT MANGUEIRA E ABRACADEIRA DA
+CIROCAR,Cirocar,CIROCAR_V073,Ford,Ka,,,,2025-04-03,69061.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V074,Ford,Ka,,,,2026-04-01,72347.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V075,Chevrolet,Tracker,,,,2023-03-28,208432.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V076,Volkswagen,Voyage,,,,2026-06-12,557362.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BUCHAS DE BANDEJAS, JOGO DE LONA"
+CIROCAR,Cirocar,CIROCAR_V077,Fiat,Palio,,,,2021-03-16,,km,Troca de óleo,True,,,,,,,Não,,Carazinho,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V078,Fiat,Strada,,,,2021-03-03,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: ABRACADEIRA, CABECOTE, COLA, CORREIA, PARAFUSO DA PROTECAO, RADIADOR, VALVULA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V079,Fiat,Palio,,,,2026-04-07,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: COXIM DO MOTOR, JOGO DE DISCO DE FREIO, JOGO DE PASTILHA DE FREIO, SILICONE E FITA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V080,Toyota,Corolla,,,,2021-08-30,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: JOGO DE PASTILHAS DE FREIO, LIQUIDO DE FREIO, SETOR, SILICONE E COLA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V081,Volkswagen,Gol,,,,2020-12-15,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V082,Chevrolet,Spin,,,,2025-05-27,,km,Troca de óleo + filtro,True,,,,,,,Não,,Ibiaçá,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V082,Chevrolet,Spin,,,,2026-04-07,,km,Outro,False,,,,,,,Não,,Ibiaçá,,"Peças: FILTRO DE COMBUSTIVEL, FLAUTA BICO INJETOR, JOGO DE VELAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V082,Chevrolet,Spin,,,,2026-08-03,178770.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Ibiaçá,,
+CIROCAR,Cirocar,CIROCAR_V083,Ford,Ecosport,,,,2023-05-12,,km,Troca de óleo + filtro,True,,,,,,,Não,,Santa Cecilia Do Sul,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V084,Fiat,Palio,2014.0,,,2022-02-24,292858.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V084,Fiat,Palio,2014.0,,,2022-04-08,,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CARTER, CEBOLINHA DO OLEO, PROTECAO DO CARTER; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V085,Fiat,Fiat Strada,2014.0,,,2021-12-14,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: CORREIA 6PK, CORREIA DO ALTERNADOR, CORREIA DO COMANDO, SENSOR DO OLEO, SENSOR TEMPERATURA, SONDA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V085,Fiat,Strada,2014.0,,,2022-02-24,145141.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V085,Fiat,Strada,2014.0,,,2022-07-14,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, COXIM AMORTECEDOR, KIT EMBREAGEM, KITS COIFAS E BATENTES; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V085,Fiat,Fiat Strada,2014.0,,,2022-08-23,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V086,Fiat,Palio,,,,2021-04-30,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES TRASEIROS, BUCHAS DE BANDEJA, COIFAS E BATENTES, COXINS DOS AMORTECEDORES DIANT,; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V086,Fiat,Palio,,,,2021-09-24,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: ABRACADEIRAS, ADITIVO PARA RADIADOR, BOMBA D'AGUA, CONEXAO D'AGUA, ESPIA DA EMBREAGEM, FILTRO DO AR DO MOTOR, JOGO DE CA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V087,Fiat,Palio,,,,2022-06-30,294960.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V088,Fiat,Palio,,,,2022-06-30,213265.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V089,Chevrolet,Tracker Ltz,2014.0,,,2021-07-06,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V089,Chevrolet,Tracker Ltz,2014.0,,,2022-04-08,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V089,Chevrolet,Tracker Ltz,2014.0,,,2022-08-23,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V090,Fiat,Strada,,,,2020-12-09,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: FAROL COMPLETO LADO ESQUERDO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V090,Fiat,Strada,,,,2020-12-14,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V090,Fiat,Strada,,,,2021-03-24,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ESPIA DO FREIO DE MAO, JOGO DE PATINS DE FREIO, SENSOR DO ABS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V091,Volkswagen,Gol,,,,2021-11-30,319073.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: BIELETA
+CIROCAR,Cirocar,CIROCAR_V091,Volkswagen,Gol,,,,2022-01-12,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE CABOS DE VELAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V091,Volkswagen,Gol,,,,2022-05-16,339131.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V091,Volkswagen,Gol,,,,2023-01-09,353430.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ALAVANCA DE MARCHA, CORREIA DENTADA, CORREIA DO ALTERNADOR, CORREIA DO AR CONDICIONADO, TENSOR DA CORREIA"
+CIROCAR,Cirocar,CIROCAR_V092,Fiat,Strada,,,,2024-07-19,,km,Troca de óleo,True,,,,,,,Não,,Pinhal Da Serra,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V093,Volkswagen,Gol,,,,2021-02-09,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BRACO DO SETOR, BUCHA DE BANDEJA, SILICONE E FITA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V093,Volkswagen,Gol,,,,2021-12-14,211123.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V093,Volkswagen,Gol,,,,2022-06-30,216437.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V094,Volkswagen,Gol,,,,2022-02-24,161087.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V095,Fiat,Strada,,,,2021-02-05,,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V095,Fiat,Strada,,,,2021-04-26,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BOBINA, JOGO DE CABO DE VELA, JOGO DE VELA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V096,Ford,Ford Ka,,,,2023-04-26,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V097,Chevrolet,Montana,,,,2025-01-14,54909.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V097,Chevrolet,Montana,,,,2026-02-23,60829.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V098,Ford,Ecosport,,,,2026-07-08,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V099,Fiat,Strada,,,,2024-08-26,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: COLA, CUBO DE RODA TRAS., KIT ENGRENAGEM 3 E 4 MARCHA, OLEO DO CAMBIO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V099,Fiat,Strada,,,,2024-10-03,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: COLA ALTA TEMPERATURA, JUNTA DO CABECOTE, JUNTA TAMPA DE VALVULAS, SENSOR DA TEMPERATURA C/CARCAC, VALVULA TERMOSTATICA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V100,Fiat,Strada,,,,2025-01-14,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ROLAMENTO DIANTEIRO L. DIREITO, ROLAMENTO DIANTEIRO L. ESQUERD; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V100,Fiat,Strada,,,,2025-04-29,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES TRAS, BUCHAS DA MOLA TRAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V100,Fiat,Strada,,,,2026-03-31,202723.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V100,Fiat,Strada,,,,2026-08-18,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: HOMOCINETICA, PIVO, SUPORTE DA CAIXA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V101,Fiat,Uno,,,,2023-08-30,205070.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: COLA DESCARGA, PONTEIRA DE DIRECAO"
+CIROCAR,Cirocar,CIROCAR_V101,Fiat,Uno,,,,2024-01-11,,km,Troca de óleo,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V102,,Peugeot,,,,2022-12-14,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V103,Toyota,Corolla,,,,2026-09-30,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BIELETAS, JOGO DE PASTILHA DE FREIO, SILICONE; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V104,Volkswagen,Gol,,,,2021-08-05,296489.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CILINDRO MESTRE, FLUIDO DE FREIO, JOGO DE PATINS DE FREIO, JOGO DE REGULADOR TRASEIRO"
+CIROCAR,Cirocar,CIROCAR_V104,Volkswagen,Gol,,,,2021-09-10,298131.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES TRASEIROS, BUCHA DE BANDEJA, BUCHA DO EIXO TRAS., FILTRO DO AR CONDICIONADO, PIVO LADO ESQ."
+CIROCAR,Cirocar,CIROCAR_V104,Volkswagen,Gol,,,,2021-11-30,307287.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V104,Volkswagen,Gol,,,,2022-08-05,336928.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, BIELETA, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS, ROLAMENTO DIANTEIRO COM ABS, SILICONE E F"
+CIROCAR,Cirocar,CIROCAR_V105,Volkswagen,Gol,,,,2023-01-09,291426.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, BORRACHAS DO ESTABILIZADOR, COXINS DO MOTOR, FITA E SILICONE, LIQUIDO DE FREIO, PASTILHAS DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V106,Fiat,Strada,,,,2021-03-24,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BORRACHA DAS PINCHAS DAS PASTI, COLA DESCARGA, FUSIVEL MAX, JUNTA DO COLETOR, PARAFUSO, SENSOR DO ABS, SILICONE; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V106,Fiat,Strada,,,,2021-04-26,,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V107,Chevrolet,Onix,,,,2021-06-22,,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: JOGO DE CABO, JOGO DE VELA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V107,Chevrolet,Onix,,,,2021-08-05,292509.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V108,Chevrolet,Onix,,,,2021-11-30,306308.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V108,Chevrolet,Onix,,,,2022-01-12,311385.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CILINDRO MESTRE, FLUIDO DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V108,Chevrolet,Onix,,,,2023-01-09,316627.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: FITA E SILICONE, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, JOGO DE PATINS DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V108,Chevrolet,Onix,,,,2024-11-13,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: SUPORTE DA CAXIA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V109,Chevrolet,Onix,,,,2022-08-05,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PALHETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V109,Chevrolet,Onix,,,,2024-09-19,418712.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES TRAS., AMORTECEODRES DIANT., BUCHA ESTABILIZADOR, CILINDRO DE RODA TRAS., COXINS DO AMORTECEDOR DIANT., CO"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2021-08-06,,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: KIT COMPLETO EMBREAGEM; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2021-10-25,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BIELETAS, BUCHAS DE BANDEJA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2021-12-13,75352.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES TRAS., BATENTES AMORTECEDOR TRAS., BIELETAS, BRACINHO L. ES., JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS D"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2022-04-26,,km,Troca de óleo,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Fiat Mobi,,,,2022-09-15,100685.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDOR L. EQ., BIELETA, BORRACHAS DO FREIO, COXIM L. EQ., DISCOS DE FREIOS, FITA E SILICONE, JOGO DE PASTILHAS DE F"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2023-01-10,113679.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BIELETAS, BRACO DO SETOR, FITA E SILICONE"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2023-02-27,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CILINDROS DIANTEIROS COMPLETOS, COXIM L.D, FLUIDO DE FREIO, KIT COMPLETO DE EMBREAGEM, PARAFUSO E POLCA, PARAFUSO SUPORT; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2023-08-30,138303.0,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: SILICONE E SOLDA
+CIROCAR,Cirocar,CIROCAR_V110,Fiat,Mobi,,,,2024-01-11,151864.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: COLA DESCARGA, FILTRO DE COMBUSTIVEL, FITA, GRAXA E CINTA PLASTICA"
+CIROCAR,Cirocar,CIROCAR_V111,Fiat,Mobi,,,,2021-04-27,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BUCHAS DE BANDEJA, COXIM DOS AMORTECEDORES, JOGO DE PASTILHAS, SILICONE E FITA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2021-06-22,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2021-08-05,196185.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2022-01-12,210831.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CORREIA DO ALTERNADOR ELASTICA, CORREIA DO AR ELASTICA, CORREIA DO COMANDO, SUPORTE MOTOR, TENSOR DA CORREIA"
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2022-05-16,221612.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2022-10-13,230461.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V112,Volkswagen,Gol,,,,2024-01-11,285180.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V113,Volkswagen,Gol,,,,2023-01-09,341336.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2021-08-05,229342.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2021-11-30,247571.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2022-01-12,262757.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ADITIVO PARA RADIADOR, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, LIQUIDO DE FREIO, RESERVATORIO D'AGUA, SILIC"
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2022-05-16,285781.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2022-06-29,295973.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2022-10-13,318646.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V114,Volkswagen,Gol,,,,2023-01-09,333048.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V115,Volkswagen,Gol,,,,2022-10-13,299577.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V115,Volkswagen,Gol,,,,2023-01-09,310114.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2022-03-23,261271.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2022-05-16,270232.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2022-10-13,292535.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2023-01-09,303476.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2023-03-27,311233.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BUCHAS DE BANDEJA, ESPIA DO FREIO DE MAO, JOGO DE PATINS DE FREIO TRAS., SILICONE E "
+CIROCAR,Cirocar,CIROCAR_V116,Volkswagen,Gol,,,,2024-09-19,387071.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V117,Volkswagen,Gol,,,,2023-05-08,217020.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES TRASEIROS, BIELETAS, BUCHAS DE BANDEJA, COXIM, FITA E SILICONE, KITS DO AMORTECEDORES TRAS."
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2021-11-30,257357.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2022-01-12,263435.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2022-05-16,285396.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2022-06-29,293399.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, BUCHAS DE BANDEJA, LAMPADA DE PLACA, PALHETAS DO LIMPADOR TRAS., SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2023-03-27,341918.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V118,Volkswagen,Gol,,,,2023-05-09,347367.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: JOGO DE CABO DE VELAS, JOGO DE VELA, LAMPADA H4"
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2022-01-12,225550.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ADITIVO PARA RADIADOR, COLA DESCARGA, CORREIA DENTADA, CORREIA DO ALTERNADOR, CORREIA DO AR CONDICIONADO, OLEO HIDRAULIC"
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2022-03-23,230673.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2022-10-13,261319.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2023-03-27,280345.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2023-05-09,286608.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: FITA E SILICONE, FLUIDO DE FREIO, JOGO DE DISCOS DE FREIO, JOGO DE PALHETAS DIANTEIRAS E , JOGO DE PASTILHA DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2024-08-13,352776.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2024-09-19,356299.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ADITIVO P/ RADIADOR, CANO D'AGUA, CARENAGEM D'AGUA, COLA"
+CIROCAR,Cirocar,CIROCAR_V119,Volkswagen,Gol,,,,2025-04-03,360853.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2021-09-10,104088.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2022-01-12,115911.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2022-03-23,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PALHETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2022-08-05,129637.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: CUBO TRAS
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2023-01-09,138195.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2023-05-09,146448.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2024-08-13,169645.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2024-09-19,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: ROLAMENTO TRAS. COM ABS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V120,Volkswagen,Voyage,,,,2024-11-13,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V121,Volkswagen,Voyage,,,,2025-01-14,185287.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CUBO TRAS., FILTROS DO AR CONDICIONADO"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2021-06-22,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2021-09-10,163110.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2021-11-30,175609.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2022-01-12,187423.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2022-05-16,204940.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: ADITIVO PARA O RADIADOR, BOMBA D'AGUA, CORREIA DO COMANDO, CORREIA ELASTICA DO ALTERNADOR, CORREIA ELASTICA DO AR CONDIC"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2023-01-09,243908.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2023-03-27,258733.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2023-05-09,264793.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: FITA E SILICONE, FLUIDO DE FREIO, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHA DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2024-01-11,303834.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, COLA, KIT JUNTAS DE CABECOTE"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2024-01-12,303834.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, COLA, KIT JUNTAS DE CABECOTE, SONDA"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2025-06-13,350995.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, COIFA DE RODA L. ESQ., COXINS DOS AMORTECEDORES, FITA, SILICONE E LAVA-BRISA, JOGO DE DISCO DE"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2026-04-01,381457.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: KIT EMBREAGEM COMPLETO, SILICONE"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2026-05-12,385757.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETA, COXIM DO AMORTECEDOR, PRATO DO AMORTECEDOR"
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2026-06-15,391407.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V122,Volkswagen,Gol,,,,2026-09-04,391930.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CILINDRO DE EMBREAGEM, FLUIDO DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2021-04-26,,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BOBINA, JOGO DE CABOS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2021-11-30,236727.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2022-01-12,239333.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: SUPORTE DA CAIXA
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2022-03-23,253545.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2022-05-16,254307.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BOBINA, JOGO DE CABO DE VELAS, JOGO DE VELAS"
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2022-10-13,284712.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V123,Volkswagen,Gol,,,,2023-01-09,291426.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, BORRACHAS DO ESTABILIZADOR, COXINS DO MOTOR, FITA E SILICONE, LIQUIDO DE FREIO, PASTILHAS DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2020-12-10,81979.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2021-08-05,128108.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2022-03-23,161466.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: SILICONE E FITA NOS FREIOS
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2023-01-09,201909.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2024-01-11,252229.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2025-06-13,340997.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, BUCHA DE BANDEJA, CORREIA DO ALTERNADOR, CORREIA DO COMANDO, FLUIDO DE FREIO, JOGO DE LONA TRAS., PIVO, TENSOR"
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2026-03-31,356290.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V124,Volkswagen,Gol,,,,2026-09-04,375682.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V125,Volkswagen,Gol,,,,2024-08-13,323937.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: BIELETAS, CILINDRO DE EMBREAGEM, EMBREAGEM COMPLETA, JOGO DE DISCOS E PASTILHAS DE , PIVOS, SILICONE E FLUIDO DE FREIO, "
+CIROCAR,Cirocar,CIROCAR_V126,Volkswagen,Gol,,,,2026-07-30,398593.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CUBO TRAS., MOTOR DE PARTIDA, SILICONE"
+CIROCAR,Cirocar,CIROCAR_V126,Volkswagen,Gol,,,,2026-10-08,401725.0,km,Troca de óleo,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V127,Chevrolet,Spin,,,,2021-04-30,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BRACO DO SETOR, BUCHA DO ESTABILIZADOR, BUCHAS DE BANDEJA, FLUIDO DE FREIO, JOGO DE ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V127,Chevrolet,Spin,,,,2021-07-06,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V127,Chevrolet,Spin,,,,2021-09-24,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V127,Chevrolet,Spin,,,,2021-12-14,,km,Troca de óleo,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V128,Chevrolet,Spin,,,,2022-02-24,156111.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V128,Chevrolet,Spin,,,,2023-01-25,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V128,Chevrolet,Spin,,,,2023-03-28,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES TRAS., BIELETAS, BUCHAS DE BANDEJA, CORREIA DO ALTERNADOR, CORREIA DO COMANDO, FILTRO DO AR CONDICIONADO, ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V129,Volkswagen,Gol,,,,2022-08-05,180053.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V130,Toyota,Etios,,,,2026-03-31,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: BUCHAS DO EIXO TRAS.; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V131,Fiat,Palio,,,,2021-04-30,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES TRASEIROS, BATENTES E COIFAS, BIELETAS, BUCHAS DO SUPORTE DA CAIXA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V132,Volkswagen,Gol,,,,2021-12-14,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: COLA E SILICONE, CUBO TRAS., ESPIAS FREIO DE MAO, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FEIO, JOGO DE PATINS DE ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V133,Volkswagen,Gol,,,,2022-08-23,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: BIELETAS, BUCHAS DE BANDEJA, BUCHAS DO EIXO, CUBO TRAS. DE RODA, JOGO DE CABO DE VELAS, JOGO DE DISCO DE FREIO, JOGO DE ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V133,Volkswagen,Gol,,,,2022-10-19,84465.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V133,Volkswagen,Gol,,,,2023-03-28,198497.0,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: AMORTECEDORES DIANT., AMORTECEDORES TRAS., BIELETAS, BUCHA DE BANDEJA, BUCHAS DO ESTABILIZADOR, JOGO DE DISCO DE FREIO, "
+CIROCAR,Cirocar,CIROCAR_V133,Volkswagen,Gol,,,,2023-04-24,201421.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V134,Volkswagen,Saveiro,,,,2021-03-24,,km,Outro,False,,,,,,,Não,,Passo Fundo,,Peças: PARAFUSO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V135,Volkswagen,Nova Saveiro Rb Mbvs,2019.0,,,2021-08-05,33602.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V135,Volkswagen,Saveiro,2019.0,,,2022-02-21,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CINTA PLASTICA, ESPIA DO FREIO DE MAO, FLUIDO DE FREIO, JOGO DE DISCOS DE FREIOS TRAS., JOGO DE PASTILHAS DE FREIO TRA, ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V135,Volkswagen,Saveiro Robust,2019.0,,,2022-06-21,57297.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V136,Volkswagen,Saveiro,,,,2024-07-17,191136.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BRACOS SETOR, BUCHAS DE BANDEJA, COXINS AMORTECEDORES, KIT COIFA AMORTECEDORES, SILI"
+CIROCAR,Cirocar,CIROCAR_V136,Volkswagen,Saveiro,,,,2024-09-25,197515.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: FLUIDO DE FREIO, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V136,Volkswagen,Saveiro,,,,2024-11-05,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BICO INJETOR, BIELETAS, JOGO DE CABO E VELAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V137,Volkswagen,Saveiro,2019.0,,,2021-08-30,37898.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BUCHAS DO ESTABILIZADOR, SILICONE E FITA, SONDA DE INJECAO"
+CIROCAR,Cirocar,CIROCAR_V137,Volkswagen,Saveiro,2019.0,,,2022-02-21,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: COLA DESCARGA, DESCARGA, SILICONE NAS PASTILHAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V137,Volkswagen,Saveiro,2019.0,,,2022-03-30,49879.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V137,Volkswagen,Saveiro,2019.0,,,2022-05-16,50991.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BUCHAS DO EIXO TRASEIRO, SONDA APOS CATALIZADOR"
+CIROCAR,Cirocar,CIROCAR_V138,Toyota,Etios,,,,2021-01-08,,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V139,Volkswagen,Gol,,,,2022-10-13,97732.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2021-06-22,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2021-09-10,54532.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2021-11-30,65659.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2022-03-23,76984.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2022-06-29,86970.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2022-08-05,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PALHETA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2024-09-19,237285.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: CUBOS TRAS. COM ABS, MANGA INJETADOR PARA BRISA"
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2026-02-23,302696.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V140,Volkswagen,Gol,,,,2026-07-30,326181.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V141,Volkswagen,Gol,,,,2022-06-29,79506.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V142,Volkswagen,Gol,,,,2021-08-05,62277.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V142,Volkswagen,Gol,,,,2022-08-05,123025.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V143,Chevrolet,Spin,,,,2021-04-30,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V143,Chevrolet,Spin,,,,2021-07-06,,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2021-09-10,41110.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2022-01-12,55154.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2022-03-23,68691.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2022-10-13,89657.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2023-01-09,99926.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2026-04-01,250990.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2026-05-11,260137.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V144,Volkswagen,Gol,,,,2026-09-03,274090.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V145,Ford,Ford Ka,,,,2022-02-24,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: CAIXA DE FILTRO DO AR ORIGINAL, SUPORTE CAMBIO ORIGINAL, SUPORTE DO MOTOR; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V145,Ford,Ka,,,,2022-10-19,111683.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V146,Fiat,Strada,,,,2024-12-09,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: PIVOS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V147,Fiat,Strada,,,,2024-01-17,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V148,Fiat,Strada,,,,2024-08-26,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: BIELETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V149,Fiat,Strada,,,,2025-04-03,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: BIELETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V149,Fiat,Strada,,,,2026-03-31,87371.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V149,Fiat,Strada,,,,2026-07-06,92047.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CORREIA DENTADA, SENSOR DO OLEO, TENSOR DA CORREIA, VALVULA SOLENOIDE"
+CIROCAR,Cirocar,CIROCAR_V149,Fiat,Strada,,,,2026-07-30,93029.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V149,Fiat,Strada,,,,2026-10-20,95159.0,km,Troca de filtro de óleo,False,,,,,,,Não,,Tapejara,,
+CIROCAR,Cirocar,CIROCAR_V150,Toyota,Corolla,,,,2022-08-23,,km,Outro,False,,,,,,,Sim,,Santa Cecília Do Sul,,"Carro de frota de empresa; Peças: JOGO DE DISCOS DE FREIO DIANT, JOGO DE PASTILHAS DE FREIO DIA, JOGO DE PASTILHAS DE FREIO TRA, SILICONE; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V151,Chevrolet,Onix,,,,2026-09-29,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V152,Volkswagen,Voyage,,,,2025-04-03,39719.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V153,Fiat,Fiat Toro,,,,2024-01-17,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V153,Fiat,Toro,,,,2024-10-04,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V153,Fiat,Toro,,,,2025-04-03,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BIELETAS TRAS., CUBO DE RODA TRAS. LADO DIREIT, CUBO DIANTEIRO LADO DIREITO, JOGO DE PASTILHAS DE FREIO, SEMI EIXO TRAS.; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V154,Volkswagen,Gol,,,,2024-09-19,32244.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2024-08-13,73843.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2024-11-13,84275.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2025-04-03,95040.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2025-06-13,106638.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2026-02-23,148178.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2026-05-12,147967.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V155,Volkswagen,Gol,,,,2026-07-30,158172.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V156,Fiat,Cronos,,,,2026-06-12,121596.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BIELETAS, JOGO DE DISCO DE FREIO, JOGO DE PASTILHA DE FREIO, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V157,Volkswagen,Saveiro,,,,2026-07-14,98343.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CORREIA DO ALTERNADOR, CORREIA ELASTICA"
+CIROCAR,Cirocar,CIROCAR_V158,Volkswagen,Saveiro,,,,2026-04-24,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: FLUIDO DE FREIO, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, JOGO DE PASTILHAS DE FREIO TRA, SILICONE E FITA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V159,Volkswagen,Saveiro,,,,2026-11-04,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: CHICOTE DE FIO ABS E REGULAGEM; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V160,Fiat,Strada,,,,2026-08-14,50125.0,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ABRACADEIRA MANGA, ADITIVO PARA RADIADOR, RADIADOR"
+CIROCAR,Cirocar,CIROCAR_V161,Honda,Civic,,,,2023-08-24,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CABECOTE, CORREIA DENTADA, JOGO DE VELAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V162,Chevrolet,Astra,,,,2026-09-15,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,"Peças: ANEL DE VEDACAO - BOMBA, BOMBA DE COMBUSTIVEL, CONECTOR 4 VIAS, FLANGE - BOMBA, RELE DA BOMBA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V163,Chevrolet,Celta,,,,2026-09-13,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: JOGO DE VELAS E KIT BICOS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V164,Volkswagen,Saveiro 1.8,2000.0,1.8,,2022-08-26,88585.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Charrua,,
+CIROCAR,Cirocar,CIROCAR_V165,Chevrolet,Cruze,,,,2022-12-15,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V166,Mitsubishi,Asx,,,,2022-11-18,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES TRASEIROS, BATENTES DOS AMORTECEDORES TRA, BIELETAS, BUCHA DE BANDEJA TRASEIRA DIRE, BUCHAS DE BANDEJA DIA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V166,Mitsubishi,Asx,,,,2024-09-11,,km,Troca de óleo + filtro,True,,,,,,,Não,,Ibiaçá,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V166,Mitsubishi,Asx,,,,2025-03-09,,km,Troca de óleo,True,,,,,,,Não,,Ibiaçá,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V167,Volkswagen,Fox,,,,2021-11-19,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BUCHAS DE BIELA, CALCO DO VIRABREQUIM, COMANDO DO MOTOR, JOGO DE ANEIS, JOGO DE JUNTAS, KIT DE BRONZINAS DE BIELA E MA, ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V168,Volkswagen,Gol,,,,2026-03-13,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: COIFA DE RODA, JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, KIT BUCHA DA ALAVANCA DE MARCH, PONTA DE EIXO, SENSO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V168,Volkswagen,Gol,,,,2026-06-10,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V168,Volkswagen,Gol,,,,2026-10-20,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ANEL DE VEDACAO DA BOMBA DE CO, CILINDRO DE RODA TRAS, FLUIDO DE FREIO, JOGO DE DISCOS E PASTILHAS DE , JOGO DE LONA, PO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V169,Fiat,Palio,,,,2026-06-09,,km,Troca de óleo,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V170,Volkswagen,Gol,,,,2021-09-08,,km,Troca de óleo,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V171,Fiat,Doblo,,,,2023-08-30,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CABECOTE COMPLETO, CORREIA, TENSOR, VELA E COLA, KIT BRONZINAS DE MANCAL E BIEL, KIT DE EMBREAGEM E SELOS D'AGU, KIT PIS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V172,Volkswagen,Gol,,,,2026-03-18,,km,Troca de filtro de óleo,False,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V172,Volkswagen,Gol,,,,2026-11-04,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: CILINDRO DE FREIO TRAS. LD, DISCO DE FREIO, ESPIA DO FREIO DE MAO, FLUIDO DE FREIO, JOGO DE CABO DE VELAS, JOGO DE VELAS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V173,Ford,Fiesta,,,,2021-02-11,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: EIXO TRASEIRO COMPLETO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V174,Volkswagen,Gol,,,,2021-11-30,,km,Troca de filtro de óleo,False,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V175,Fiat,Siena,,,,2020-12-15,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V176,Ford,Ecosport,,,,2024-12-18,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,"Peças: AMORTECEDORES DIANT., AMORTECEDORES TRAS., BIELETAS, BUCHA DO EIXO TRAS., COXINS DO AMORTECEDORES DIANT, COXINS DO AMORT; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V176,Ford,Ecosport,,,,2026-04-30,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,"Peças: ABRACADEIRA, BIELETA, CORREIA DO ALTERNADOR, JOGO DE PALHETAS, ROLAMENTOS DO TENSOR DA CORREI; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V177,Ford,Ecosport,,,,2026-02-25,,km,Troca de óleo + filtro,True,,,,,,,Não,,Santa Cecília Do Sul,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V177,Ford,Ecosport,,,,2026-07-03,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,"Peças: BOMBA DE AGUA, JUNTA DO CABECOTE, PIVO; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V178,Toyota,Corolla,,,,2021-12-28,,km,Troca de óleo + filtro,True,,,,,,,Não,,Vila Langaro,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V179,Ford,Fiesta,,,,2024-07-17,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: ESPIA DO FREIO DE MAO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V179,Ford,Fiesta,,,,2024-08-12,,km,Outro,False,,,,,,,Não,,Tapejara,,Peças: ROLAMENTOS TRAS.; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V180,Honda,Civic,,,,2022-01-13,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,Peças: SUPORTE DA CAIXA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V181,Chevrolet,S10,,,,2021-04-30,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V182,Chevrolet,Corsa,,,,2026-04-14,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AXIAL DE DIRECAO, BOMBA DE AGUA, JOGO DE PASTILHA DE FREIO, PIVO, RADIADOR, SILICONE, TUBO E MANGA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V183,Volkswagen,Fox,,,,2026-09-04,,km,Outro,False,,,,,,,Não,,Santa Cecília Do Sul,,Peças: RADIADOR; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V184,,I30,,,,2021-10-13,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BUCHAS DE BANDEJAS, BUCHAS ESTABILIZADORAS, JOGO DE DISCOS DE FREIOS, JOGO DE PASTIL; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V185,Fiat,Palio,,,,2022-07-27,,km,Troca de óleo + filtro,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V186,Chevrolet,Onix 2013 1.4 Cor: Vermelho,,1.4,,2026-06-23,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES TRASEIROS, COXINS DOS AMORTECEDORES, JOGO DE DISCOS E PASTILHAS DE , KIT COIFA E; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V187,Fiat,Palio,,,,2025-11-14,,km,Troca de óleo,True,,,,,,,Não,,Tapejara,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V188,Fiat,Siena,,,,2026-05-22,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: ADITIVO, BICO INJETOR, JOGO DE VELAS, SELO D'AGUA; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V189,,Sportage,,,,2024-01-17,,km,Outro,False,,,,,,,Não,,Tapejara,,"Peças: BUCHAS TRAS., OLEO DE CAMBIO, SILICONE; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Uno,,,,2021-12-13,64552.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: JOGO DE DISCOS DE FREIO, JOGO DE PASTILHAS DE FREIO, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Uno,,,,2022-06-15,,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: SILICONE E FITA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Fiat Uno,,,,2022-09-15,101377.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BORRACHAS DO FREIO, FLUIDO DE FREIO, JOGO DE PASTILHAS DE FREIO, MACANETA DA PORTA, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Uno,,,,2023-01-10,117583.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CILINDRO DIANTEIRO ESQUERDO E , FITA E SILICONE, LIQUIDO DE FREIO"
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Uno,,,,2023-04-19,132786.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES DIANTEIROS, AMORTECEDORES DO CAPO TRAS, COXINS DO AMORTECEDORES, PARAFUSO COMPLETO DO SUPORTE D, SUPORTE D"
+CIROCAR,Cirocar,CIROCAR_V190,Fiat,Uno,,,,2023-08-30,148562.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: MALHA DA DESCARGA, PIVO, ROLAMENTO TRAS."
+CIROCAR,Cirocar,CIROCAR_V191,Fiat,Strada,,,,2021-04-27,,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: SENSOR DO VELOCIMETRO; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2021-08-06,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: ABRACADEIRA, CORREIA DENTADA, MANGA DO HIDRAULICO, OLEO HIDRAULICO, PIVOS; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2021-10-25,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES TRASEIROS, PONTEIRA L.D.; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2022-04-26,90864.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Água Santa,,
+CIROCAR,Cirocar,CIROCAR_V192,,Stada,,,,2022-09-15,106839.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: ABRACADEIRA, AMORTECEDORES DIANTEIROS, BUCHAS DE BANDEJA, CORREIA DO HIDROVACUO, FITA E SILICONE, JOGO DE PASTILHAS, KIT"
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2023-01-10,115260.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: CINTA PLASTICA, COXIM, FITA E SILICONE, OLEO HIDRAULICO, PONTEIRA DE DIRECAO, RETIFICA, ROLAMENTO"
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2023-02-27,116956.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: PIVO L.D, SILICONE E FITA"
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2026-06-10,,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: JUNTA TAMPA DE VALVULAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V192,Fiat,Strada,,,,2026-08-04,208283.0,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: VALVULA VVT
+CIROCAR,Cirocar,CIROCAR_V193,Hyundai,Ix35,,,,2025-11-12,,km,Troca de óleo + filtro,True,,,,,,,Não,,Ibiaçá,,Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V194,Volkswagen,Gol,,,,2022-10-19,22909.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Santa Cecília Do Sul,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V194,Volkswagen,Gol,,,,2022-10-21,22909.0,km,Troca de óleo + filtro,True,,,,,,,Não,,Sananduva,,
+CIROCAR,Cirocar,CIROCAR_V195,Fiat,Uno,,,,2026-07-21,191465.0,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: JOGO DE CABO DE VELA
+CIROCAR,Cirocar,CIROCAR_V196,Volkswagen,Gol,,,,2025-04-03,37399.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V196,Volkswagen,Gol,,,,2025-06-13,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PALHETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V197,Volkswagen,Gol,,,,2026-06-16,134329.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V198,Volkswagen,Gol,,,,2024-11-13,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PALHETA; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V198,Volkswagen,Gol,,,,2026-09-04,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: PALHETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V199,Volkswagen,Gol,,,,2024-08-13,49233.0,km,Outro,False,,,,,,,Sim,,Tapejara,,"Carro de frota de empresa; Peças: KIT CORREIAS(COMANDO, ALTERNAD, TENSOR"
+CIROCAR,Cirocar,CIROCAR_V199,Volkswagen,Gol,,,,2026-04-01,139234.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V200,Volkswagen,Gol,,,,2024-01-11,57926.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V200,Volkswagen,Gol,,,,2025-04-03,130857.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V200,Volkswagen,Gol,,,,2026-10-08,207169.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V201,Volkswagen,Gol,,,,2026-09-04,203243.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: JOGO DE PATINS DE FREIO
+CIROCAR,Cirocar,CIROCAR_V202,Volkswagen,Gol,,,,2024-09-19,21119.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V202,Volkswagen,Gol,,,,2026-04-01,90874.0,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: ROLAMENTO DO CUBO L.D
+CIROCAR,Cirocar,CIROCAR_V202,Volkswagen,Gol,,,,2026-07-30,109999.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V203,Volkswagen,Gol,,,,2026-06-16,,km,Outro,False,,,,,,,Sim,,Tapejara,,Carro de frota de empresa; Peças: PALHETAS; Km não anotado na nota
+CIROCAR,Cirocar,CIROCAR_V204,Volkswagen,Gol,,,,2026-09-16,,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: AMORTECEDORES DIANTEIROS, BIELETAS, BUCHAS DE BANDEJA, BUCHAS ESTABILIZADORAS, COXINS DOS AMORTECEDORES DIANT, PRATO DO ; Km não anotado na nota"
+CIROCAR,Cirocar,CIROCAR_V205,Volkswagen,Gol,,,,2025-04-29,93429.0,km,Outro,False,,,,,,,Não,,Água Santa,,"Peças: BOBINA, CORREIA ELASTICA, JOGO DE VELAS, KIT CORREIA DO COMANDO E TENSO, LAMPADA TRAS."
+CIROCAR,Cirocar,CIROCAR_V205,Volkswagen,Gol,,,,2026-03-04,136796.0,km,Outro,False,,,,,,,Não,,Água Santa,,Peças: BOMBA DE COMBUSTIVEL
+CIROCAR,Cirocar,CIROCAR_V206,Volkswagen,Gol,,,,2025-01-14,32848.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V206,Volkswagen,Gol,,,,2026-04-01,98279.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+CIROCAR,Cirocar,CIROCAR_V207,Volkswagen,Polo,,,,2026-05-12,40267.0,km,Troca de óleo + filtro,True,,,,,,,Sim,,Tapejara,,Carro de frota de empresa
+LICA,Lica / Matheus Ampese,LICA_V001,Chevrolet,Astra Hatch 2.0 8V,1999.0,2.0,Gasolina,2018-06-08,100582.0,km,Troca de óleo,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,OS 615. Óleo Selenia 5W30 SN + filtro de óleo
+LICA,Lica / Matheus Ampese,LICA_V001,Chevrolet,Astra Hatch 2.0 8V,1999.0,2.0,Gasolina,2019-12-02,105359.0,km,Troca de óleo,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,OS 1934. Óleo Selenia 5W30 SN + filtro de óleo
+LICA,Lica / Matheus Ampese,LICA_V001,Chevrolet,Astra Hatch 2.0 8V,1999.0,2.0,Gasolina,2021-05-22,107308.0,km,Troca de óleo + filtros,True,Mineral,20W50,,,,,Não,,São Domingos do Sul,,"OS 3843. Troca de óleo (AC Delco 20W50 SL) dentro de serviço grande: bomba d'água, correia de comando, juntas, filtro de ar"
+LICA,Lica / Matheus Ampese,LICA_V002,Fiat,Strada 1.4,2013.0,1.4,Flex,2020-10-02,58713.0,km,Troca de óleo + filtros,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,OS 2969. Óleo Selenia 5W30 SN + filtro óleo + filtro cabine
+LICA,Lica / Matheus Ampese,LICA_V002,Fiat,Strada 1.4,2013.0,1.4,Flex,2025-04-14,75318.0,km,Troca de óleo + filtros,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,"OS 10129. Óleo Selenia 5W30 SN + filtros óleo/ar/cabine/combustível + lâmpadas. Intervalo longo (4,5 anos): provável troca em outro lugar no meio"
+LICA,Lica / Matheus Ampese,LICA_V003,Chevrolet,Camaro SS 6.2,2014.0,6.2,Gasolina,2021-03-12,75794.0,km,Troca de óleo,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,"OS 3565. Óleo AC Delco 5W30 SN (7,6 L) + filtro de óleo. Cliente pessoa jurídica"
+LICA,Lica / Matheus Ampese,LICA_V003,Chevrolet,Camaro SS 6.2,2014.0,6.2,Gasolina,2021-11-09,75873.0,km,Troca de óleo,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,"OS 4534. Óleo AC Delco 5W30 SN + filtro + scanner. Só 79 km em 8 meses: carro pouco rodado, troca por tempo"
+LICA,Lica / Matheus Ampese,LICA_V004,Chevrolet,Cruze 1.8 16V Ecotec,2012.0,1.8,Flex,2023-04-29,135183.0,km,Troca de óleo + filtros,True,Sintético,5W30,,,,,Não,,São Domingos do Sul,,OS 6941. Óleo AC Delco 5W30 SN + filtro óleo + filtro cabine + higienização A/C
+PREFEITURA,Ampese,PREFEITURA_F052,Caterpillar,Motoniveladora 120K,2013.0,,Diesel,2026-04-30,8861.0,h,Troca de óleo + filtros,True,Mineral,15W40,250.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 052). Medida em HORAS de horímetro, não km. 20 L de óleo. Próxima troca anotada: 9111 h."
+PREFEITURA,Ampese,PREFEITURA_F052,Caterpillar,Motoniveladora 120K,2013.0,,Diesel,2026-09-22,9122.0,h,Troca de óleo + filtros,True,Mineral,15W40,258.0,,Terra,Não,Sim,Sim,São Domingos do Sul,No prazo,"Máquina da Prefeitura de São Domingos do Sul (frota nº 052). Medida em HORAS de horímetro, não km. 20 L de óleo. Próxima troca anotada: 9380 h. Prevista para 9.111 h, feita com 9.122 h."
+PREFEITURA,Ampese,PREFEITURA_F099,PowerZZ,Carregador 935A,2015.0,,Diesel,2026-05-04,5576.0,h,Troca de óleo + filtros,True,Mineral,15W40,254.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 099). Medida em HORAS de horímetro, não km. 18 L de óleo. Próxima troca anotada: 5830 h."
+PREFEITURA,Ampese,PREFEITURA_F099,PowerZZ,Carregador 935A,2015.0,,Diesel,2026-09-17,5832.0,h,Troca de óleo + filtros,True,Mineral,15W40,268.0,,Terra,Não,Sim,Sim,São Domingos do Sul,No prazo,"Máquina da Prefeitura de São Domingos do Sul (frota nº 099). Medida em HORAS de horímetro, não km. 18 L de óleo. Próxima troca anotada: 6100 h. Prevista para 5.830 h, feita com 5.832 h."
+PREFEITURA,Ampese,PREFEITURA_F103,New Holland,Retroescavadeira 95B,2017.0,,Diesel,2026-02-10,9136.0,h,Troca de óleo + filtros,True,Mineral,15W40,264.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 103). Medida em HORAS de horímetro, não km. 15 L de óleo. Próxima troca anotada: 9400 h."
+PREFEITURA,Ampese,PREFEITURA_F103,New Holland,Retroescavadeira 95B,2017.0,,Diesel,2026-07-15,9437.0,h,Troca de óleo + filtros,True,Mineral,15W40,263.0,,Terra,Não,Sim,Sim,São Domingos do Sul,Atrasado,"Máquina da Prefeitura de São Domingos do Sul (frota nº 103). Medida em HORAS de horímetro, não km. 16 L de óleo. Próxima troca anotada: 9700 h. Prevista para 9.400 h, feita com 9.437 h (37 h depois)."
+PREFEITURA,Ampese,PREFEITURA_F108,Valtra,Trator BM 125i,2016.0,,Diesel,2026-05-04,47.0,h,Troca de óleo + filtros,True,Mineral,15W40,253.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 108). Medida em HORAS de horímetro, não km. 15 L de óleo. Próxima troca anotada: 300 h. Horímetro zerado/ajustado (anotação: ""ajustar hora no Frotas"", km 8863). Próxima troca em 300 h contando do novo horímetro."
+PREFEITURA,Ampese,PREFEITURA_F108,Valtra,Trator BM 125i,2016.0,,Diesel,2026-10-14,307.0,h,Troca de óleo + filtros,True,Mineral,15W40,253.0,,Terra,Não,Sim,Sim,São Domingos do Sul,No prazo,"Máquina da Prefeitura de São Domingos do Sul (frota nº 108). Medida em HORAS de horímetro, não km. 16 L de óleo. Próxima troca anotada: 560 h. Prevista para 300 h, feita com 307 h."
+PREFEITURA,Ampese,PREFEITURA_F113,PowerZZ,Carregador 956E,2018.0,,Diesel,2026-06-23,4450.0,h,Troca de óleo + filtros,True,Mineral,15W40,250.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 113). Medida em HORAS de horímetro, não km. 20 L de óleo. Próxima troca anotada: 4700 h."
+PREFEITURA,Ampese,PREFEITURA_F132,XCMG,Retroescavadeira XC870BR,2024.0,,Diesel,2026-05-04,1842.0,h,Troca de óleo + filtros,True,Mineral,15W40,258.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 132). Medida em HORAS de horímetro, não km. 14 L de óleo. Próxima troca anotada: 2100 h."
+PREFEITURA,Ampese,PREFEITURA_F132,XCMG,Retroescavadeira XC870BR,2024.0,,Diesel,2026-09-16,2104.0,h,Troca de óleo + filtros,True,Mineral,15W40,251.0,,Terra,Não,Sim,Sim,São Domingos do Sul,No prazo,"Máquina da Prefeitura de São Domingos do Sul (frota nº 132). Medida em HORAS de horímetro, não km. 14 L de óleo. Próxima troca anotada: 2355 h. Prevista para 2.100 h, feita com 2.104 h."
+PREFEITURA,Ampese,PREFEITURA_F140,JohnDeere,Trator,2018.0,,Diesel,2026-03-04,6857.0,h,Troca de óleo + filtros,True,Mineral,15W40,243.0,,Terra,Não,Sim,Sim,São Domingos do Sul,,"Máquina da Prefeitura de São Domingos do Sul (frota nº 140). Medida em HORAS de horímetro, não km. 15 L de óleo. Próxima troca anotada: 7100 h."
