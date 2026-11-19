@@ -1,0 +1,293 @@
+{
+  "aviso": "Dados reais de quatro fontes, base pequena. Estudo dessas oficinas, sem generalização.",
+  "data_treino": "2026-11-19 16:39",
+  "modelo_escolhido": "regua_fabricante",
+  "params_modelo": null,
+  "melhor_regua": "regua_fabricante",
+  "melhor_ml": "ridge_optuna",
+  "params_melhor_ml": {
+    "tipo": "ridge",
+    "alpha": 0.0010175068542526283,
+    "conjunto": "reguas",
+    "alvo": "log_dias"
+  },
+  "explicacao_de": "ridge_optuna",
+  "tamanhos": {
+    "treino": 47,
+    "teste": 12,
+    "veiculos_treino": 26,
+    "veiculos_teste": 11
+  },
+  "periodos": {
+    "treino": [
+      "2019-12-02",
+      "2026-08-07"
+    ],
+    "teste": [
+      "2026-09-03",
+      "2026-10-30"
+    ]
+  },
+  "por_fonte": {
+    "AMPESE": 21,
+    "CIROCAR": 30,
+    "LICA": 3,
+    "PREFEITURA": 5
+  },
+  "validacao_cruzada": {
+    "regua_mediana": {
+      "mae_dias": 91.18,
+      "rmse_dias": 140.3,
+      "mape_pct": 54.0,
+      "r2": -0.203,
+      "n": 47
+    },
+    "regua_fabricante": {
+      "mae_dias": 52.63,
+      "rmse_dias": 83.97,
+      "mape_pct": 32.2,
+      "r2": 0.569,
+      "n": 47
+    },
+    "regua_ultimo_intervalo": {
+      "mae_dias": 63.64,
+      "rmse_dias": 96.86,
+      "mape_pct": 42.3,
+      "r2": 0.427,
+      "n": 47
+    },
+    "regua_media_reguas": {
+      "mae_dias": 52.73,
+      "rmse_dias": 81.57,
+      "mape_pct": 34.3,
+      "r2": 0.593,
+      "n": 47
+    },
+    "linear_reguas": {
+      "mae_dias": 60.6,
+      "rmse_dias": 88.57,
+      "mape_pct": 45.1,
+      "r2": 0.521,
+      "n": 47
+    },
+    "ridge_cv_reguas": {
+      "mae_dias": 57.06,
+      "rmse_dias": 82.41,
+      "mape_pct": 45.3,
+      "r2": 0.585,
+      "n": 47
+    },
+    "lasso_cv_reguas": {
+      "mae_dias": 57.28,
+      "rmse_dias": 85.12,
+      "mape_pct": 44.1,
+      "r2": 0.557,
+      "n": 47
+    },
+    "elasticnet_cv_reguas": {
+      "mae_dias": 56.85,
+      "rmse_dias": 81.81,
+      "mape_pct": 44.8,
+      "r2": 0.591,
+      "n": 47
+    },
+    "linear_basico": {
+      "mae_dias": 81.49,
+      "rmse_dias": 118.03,
+      "mape_pct": 62.3,
+      "r2": 0.149,
+      "n": 47
+    },
+    "ridge_cv_basico": {
+      "mae_dias": 66.67,
+      "rmse_dias": 94.33,
+      "mape_pct": 53.8,
+      "r2": 0.456,
+      "n": 47
+    },
+    "lasso_cv_basico": {
+      "mae_dias": 65.44,
+      "rmse_dias": 95.51,
+      "mape_pct": 52.5,
+      "r2": 0.443,
+      "n": 47
+    },
+    "elasticnet_cv_basico": {
+      "mae_dias": 66.13,
+      "rmse_dias": 93.65,
+      "mape_pct": 53.8,
+      "r2": 0.464,
+      "n": 47
+    },
+    "linear_completo": {
+      "mae_dias": 153.46,
+      "rmse_dias": 321.08,
+      "mape_pct": 98.3,
+      "r2": -5.3,
+      "n": 47
+    },
+    "ridge_cv_completo": {
+      "mae_dias": 71.27,
+      "rmse_dias": 104.82,
+      "mape_pct": 54.4,
+      "r2": 0.329,
+      "n": 47
+    },
+    "lasso_cv_completo": {
+      "mae_dias": 67.51,
+      "rmse_dias": 102.23,
+      "mape_pct": 50.4,
+      "r2": 0.361,
+      "n": 47
+    },
+    "elasticnet_cv_completo": {
+      "mae_dias": 67.33,
+      "rmse_dias": 94.58,
+      "mape_pct": 54.5,
+      "r2": 0.453,
+      "n": 47
+    },
+    "ridge_cv_delta_basico": {
+      "mae_dias": 68.5,
+      "rmse_dias": 100.3,
+      "mape_pct": 38.5,
+      "r2": 0.385,
+      "n": 47
+    },
+    "ridge_optuna": {
+      "mae_dias": 56.83,
+      "rmse_dias": 89.93,
+      "mape_pct": 36.1,
+      "r2": 0.506,
+      "n": 47
+    }
+  },
+  "teste_final": {
+    "regua_fabricante": {
+      "mae_dias": 30.64,
+      "rmse_dias": 38.82,
+      "mape_pct": 27.1,
+      "r2": 0.886,
+      "n": 12
+    },
+    "regua_mediana": {
+      "mae_dias": 75.5,
+      "rmse_dias": 121.47,
+      "mape_pct": 64.4,
+      "r2": -0.119,
+      "n": 12
+    },
+    "regua_ultimo_intervalo": {
+      "mae_dias": 33.17,
+      "rmse_dias": 44.94,
+      "mape_pct": 27.7,
+      "r2": 0.847,
+      "n": 12
+    },
+    "regua_media_reguas": {
+      "mae_dias": 30.65,
+      "rmse_dias": 39.04,
+      "mape_pct": 26.3,
+      "r2": 0.884,
+      "n": 12
+    },
+    "ridge_optuna": {
+      "mae_dias": 29.62,
+      "rmse_dias": 34.37,
+      "mape_pct": 36.3,
+      "r2": 0.91,
+      "n": 12
+    }
+  },
+  "optuna": {
+    "melhores_params": {
+      "alpha": 0.0010175068542526283,
+      "conjunto": "reguas",
+      "alvo": "log_dias"
+    },
+    "melhor_mae": 56.83,
+    "tentativas": 40
+  },
+  "faixa": {
+    "s_dias": 85.8,
+    "margem_dias": 171.6,
+    "cobertura_teste": 1.0,
+    "s_ml_dias": 91.9
+  },
+  "importancias": {
+    "intervalo_ant_dias": -1.57,
+    "fonte": 16.93,
+    "intervalo_rec_unid": 27.42,
+    "taxa_uso_ant": 72.42,
+    "intervalo_rec_meses": 75.33
+  },
+  "decisao": {
+    "custo_tarde": 150.0,
+    "custo_cedo": 15.0,
+    "antecedencia_dias": 60,
+    "antecedencia_contato_caro": 23,
+    "custos_por_antecedencia": [
+      2280,
+      2130,
+      1980,
+      1980,
+      1980,
+      1995,
+      2025,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1740,
+      1590,
+      1590,
+      1590,
+      1440,
+      1305,
+      1305,
+      1335,
+      1365,
+      1365,
+      1065,
+      1095,
+      1095,
+      1095,
+      1110,
+      1125,
+      1155,
+      1155,
+      1155,
+      1155,
+      1155,
+      900,
+      750,
+      780,
+      780,
+      780,
+      780,
+      795,
+      810,
+      825,
+      825,
+      825,
+      825,
+      825,
+      855,
+      855,
+      855,
+      855,
+      855,
+      855,
+      855,
+      855,
+      705
+    ]
+  }
+}
