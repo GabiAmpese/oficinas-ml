@@ -9,7 +9,7 @@ import pytest
 
 from modelos import (ReguaFabricante, ReguaMediana, ReguaUltimoIntervalo, construir_modelo, custo_antecedencia,
                      melhor_antecedencia, metricas, residuo_tipico, simular)
-from treinar import CAMINHO_INTERVALOS, CAMINHO_METRICAS, CAMINHO_MODELO
+from treinar import CAMINHO_INTERVALOS, CAMINHO_METRICAS, CAMINHO_MODELO, dobras_temporais, dobras_temporais_estritas
 
 
 def tabela():
@@ -94,6 +94,22 @@ def test_artefato_carrega_preve_e_simula():
         assert p.shape == (1,) and 0 < p[0] < 2000
     base = simular(art["modelo_ml"], caso)
     assert isinstance(base, float)
+
+
+def test_dobras_temporais_nao_vazam():
+    iv = pd.read_csv(CAMINHO_INTERVALOS, parse_dates=["data_ini", "data_fim"])
+    d = iv[iv["situacao"] == "valido"].sort_values("data_fim").reset_index(drop=True)
+    for tr, va in dobras_temporais(d):
+        assert d["data_fim"].iloc[tr].max() <= d["data_fim"].iloc[va].min()
+        assert not set(tr) & set(va)
+    for tr, va in dobras_temporais_estritas(d):
+        assert d["data_fim"].iloc[tr].max() <= d["data_ini"].iloc[va].min()
+
+
+def test_regua_cega_so_usa_os_meses():
+    from modelos import ReguaCega
+    X = tabela()
+    assert (ReguaCega().fit(X).predict(X) == 12 * 30.4).all()
 
 
 def test_split_temporal_sem_vazamento_no_registro():

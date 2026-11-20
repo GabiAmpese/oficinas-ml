@@ -24,7 +24,7 @@ from sklearn.inspection import permutation_importance
 from sklearn.model_selection import KFold
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from modelos import (ALVO, ModeloLogDias, ReguaFabricante, ReguaMediaDasReguas, ReguaMediana, ReguaUltimoIntervalo,  # noqa: E402
+from modelos import (ALVO, ModeloLogDias, ReguaCega, ReguaFabricante, ReguaMediaDasReguas, ReguaMediana, ReguaUltimoIntervalo,  # noqa: E402
                      colunas_de, construir_modelo, melhor_antecedencia, metricas, preencher_taxa, residuo_tipico)
 
 warnings.filterwarnings("ignore")
@@ -49,6 +49,8 @@ COR = "#6f4e37"
 # ---------------------------------------------------------------------------
 def fabrica(nome: str, params: dict | None = None):
     params = params or {}
+    if nome == "regua_cega":
+        return ReguaCega()
     if nome == "regua_mediana":
         return ReguaMediana()
     if nome == "regua_fabricante":
@@ -65,12 +67,49 @@ def fabrica(nome: str, params: dict | None = None):
 
 
 def prever_cv(nome: str, params: dict | None, X: pd.DataFrame, y: pd.Series, folds) -> np.ndarray:
-    """Previsão fora da dobra para cada linha do treino (como cross_val_predict)."""
-    oof = np.zeros(len(X))
+    """Previsão fora da dobra para cada linha validada (como cross_val_predict). NaN onde a linha não foi validada."""
+    oof = np.full(len(X), np.nan)
     for tr, va in folds:
         m = fabrica(nome, params).fit(X.iloc[tr], y.iloc[tr])
         oof[va] = m.predict(X.iloc[va])
     return oof
+
+
+def dobras_temporais(X: pd.DataFrame, n_blocos: int = 5) -> list:
+    """Validação cruzada com corte no tempo (aula 5): janela que expande.
+
+    Os intervalos, já ordenados por data_fim, são divididos em n_blocos cronológicos. O bloco k é a
+    validação e o treino são todos os blocos anteriores: nenhum intervalo de treino termina depois do
+    fim de um intervalo de validação. É a mesma regra do teste final (treino até uma data, teste depois),
+    então validação e teste medem a mesma coisa. O primeiro bloco só treina.
+    """
+    blocos = np.array_split(np.arange(len(X)), n_blocos)
+    return [(np.concatenate(blocos[:k]), blocos[k]) for k in range(1, n_blocos)]
+
+
+def dobras_temporais_estritas(X: pd.DataFrame, n_blocos: int = 5, minimo_treino: int = 8) -> list:
+    """Variante mais conservadora, usada como checagem de robustez.
+
+    O treino do bloco k são APENAS os intervalos cuja data_fim é anterior à MENOR data_ini do bloco:
+    só o que já estava concluído quando a primeira previsão do bloco seria feita. Valida menos
+    intervalos e deixa as primeiras dobras com pouquíssimo treino.
+    """
+    blocos = np.array_split(np.arange(len(X)), n_blocos)
+    data_fim = X["data_fim"].to_numpy()
+    folds = []
+    for k in range(1, n_blocos):
+        va = blocos[k]
+        limite = X["data_ini"].iloc[va].min()
+        tr = np.where(data_fim <= np.datetime64(limite))[0]
+        if len(tr) >= minimo_treino:
+            folds.append((tr, va))
+    return folds
+
+
+def metricas_cv(y: pd.Series, oof: np.ndarray) -> dict:
+    """Métricas só sobre as linhas que receberam previsão fora da dobra."""
+    mascara = ~np.isnan(oof)
+    return metricas(np.asarray(y)[mascara], oof[mascara])
 
 
 class ModeloDelta:
@@ -106,10 +145,20 @@ def main() -> None:
           f"teste: {len(teste)} (de {teste['data_fim'].min().date()} a {teste['data_fim'].max().date()})")
     print(f"Mediana de dias no treino: {y_tr.median():.0f}\n")
 
-    folds = list(KFold(n_splits=5, shuffle=True, random_state=SEMENTE).split(X_tr))
+    folds = dobras_temporais(X_tr)
+    folds_estritos = dobras_temporais_estritas(X_tr)
+    folds_embaralhados = list(KFold(n_splits=5, shuffle=True, random_state=SEMENTE).split(X_tr))
+    for tr_i, va_i in folds:  # garantia: nenhum intervalo de treino termina depois de um de validação
+        assert X_tr["data_fim"].iloc[tr_i].max() <= X_tr["data_fim"].iloc[va_i].min()
+    n_validados = int(sum(len(va) for _, va in folds))
+    print("Validação cruzada TEMPORAL (janela que expande): "
+          + " | ".join(f"dobra {i + 1}: treino {len(tr)} → valida {len(va)}" for i, (tr, va) in enumerate(folds))
+          + f" | {n_validados} intervalos validados de {len(X_tr)}")
+    print("Checagem estrita: " + " | ".join(f"{len(tr)} → {len(va)}" for tr, va in folds_estritos) + "\n")
 
     # ---------------- Etapas 4 a 6: réguas e modelos na validação cruzada ----------------
     candidatos = {
+        "regua_cega": None,
         "regua_mediana": None,
         "regua_fabricante": None,
         "regua_ultimo_intervalo": None,
@@ -119,17 +168,20 @@ def main() -> None:
         for tipo in ["linear", "ridge_cv", "lasso_cv", "elasticnet_cv"]:
             candidatos[f"{tipo}_{conjunto}"] = {"tipo": tipo, "conjunto": conjunto, "alvo": "dias"}
 
-    resultados_cv, previsoes_cv = {}, {}
+    resultados_cv, previsoes_cv, resultados_estrita, resultados_embaralhado = {}, {}, {}, {}
     for nome, params in candidatos.items():
         oof = prever_cv(nome, params, X_tr, y_tr, folds)
-        resultados_cv[nome] = metricas(y_tr, oof)
+        resultados_cv[nome] = metricas_cv(y_tr, oof)
         previsoes_cv[nome] = oof
+        # as outras duas validações ficam só para comparação no relatório; não decidem nada
+        resultados_estrita[nome] = metricas_cv(y_tr, prever_cv(nome, params, X_tr, y_tr, folds_estritos))
+        resultados_embaralhado[nome] = metricas_cv(y_tr, prever_cv(nome, params, X_tr, y_tr, folds_embaralhados))
 
     # alvo alternativo: delta em unidades convertido em dias
-    oof = np.zeros(len(X_tr))
+    oof = np.full(len(X_tr), np.nan)
     for tr, va in folds:
         oof[va] = ModeloDelta("basico").fit(X_tr.iloc[tr], y_tr.iloc[tr]).predict(X_tr.iloc[va])
-    resultados_cv["ridge_cv_delta_basico"] = metricas(y_tr, oof)
+    resultados_cv["ridge_cv_delta_basico"] = metricas_cv(y_tr, oof)
     previsoes_cv["ridge_cv_delta_basico"] = oof
 
     # ---------------- Etapa 7: ajuste fino com Optuna ----------------
@@ -141,24 +193,29 @@ def main() -> None:
             "alvo": tentativa.suggest_categorical("alvo", ["dias", "log_dias"]),
         }
         oof = prever_cv("ridge_optuna", params, X_tr, y_tr, folds)
-        return float(np.mean(np.abs(y_tr - oof)))
+        return metricas_cv(y_tr, oof)["mae_dias"]
 
     estudo = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler(seed=SEMENTE))
     estudo.optimize(avaliar, n_trials=N_TENTATIVAS_OPTUNA)
     params_optuna = {"tipo": "ridge", **estudo.best_params}
     oof = prever_cv("ridge_optuna", params_optuna, X_tr, y_tr, folds)
-    resultados_cv["ridge_optuna"] = metricas(y_tr, oof)
+    resultados_cv["ridge_optuna"] = metricas_cv(y_tr, oof)
     previsoes_cv["ridge_optuna"] = oof
     candidatos["ridge_optuna"] = params_optuna
 
-    print("VALIDAÇÃO CRUZADA no treino (MAE em dias):")
+    print("VALIDAÇÃO CRUZADA TEMPORAL no treino (MAE em dias) | colunas: expandindo [estrita] (embaralhada antiga):")
     for nome, m in sorted(resultados_cv.items(), key=lambda kv: kv[1]["mae_dias"]):
-        print(f"  {nome:28s} MAE {m['mae_dias']:7.1f} | RMSE {m['rmse_dias']:7.1f} | MAPE {m['mape_pct']:5.1f}% | R² {m['r2']:6.3f}")
+        e = resultados_estrita.get(nome, {}).get("mae_dias"); a = resultados_embaralhado.get(nome, {}).get("mae_dias")
+        extra = (f"[{e:5.1f}]" if e is not None else "       ") + " " + (f"({a:5.1f})" if a is not None else "       ")
+        print(f"  {nome:28s} MAE {m['mae_dias']:7.1f} {extra} | RMSE {m['rmse_dias']:7.1f} | MAPE {m['mape_pct']:5.1f}% | R² {m['r2']:6.3f}")
     print(f"\nOptuna: melhor alpha {estudo.best_params['alpha']:.4f}, conjunto {estudo.best_params['conjunto']}, "
           f"alvo {estudo.best_params['alvo']} (MAE {estudo.best_value:.1f})")
 
     # ---------------- Escolha do modelo final ----------------
-    nome_final = min(resultados_cv, key=lambda k: resultados_cv[k]["mae_dias"])
+    # menor MAE na validação; em empate (diferença menor que 0,5 dia), fica a opção mais simples,
+    # que é a que aparece antes na lista (réguas antes de modelos)
+    melhor_mae = min(m["mae_dias"] for m in resultados_cv.values())
+    nome_final = next(k for k, m in resultados_cv.items() if m["mae_dias"] <= melhor_mae + 0.5)
     melhor_regua = min([k for k in resultados_cv if k.startswith("regua")], key=lambda k: resultados_cv[k]["mae_dias"])
     melhor_ml = min([k for k in resultados_cv if not k.startswith("regua")], key=lambda k: resultados_cv[k]["mae_dias"])
     print(f"\nModelo escolhido pela validação: {nome_final}  |  melhor régua: {melhor_regua}  |  melhor ML: {melhor_ml}")
@@ -173,11 +230,27 @@ def main() -> None:
     prev_te = modelo_final.predict(X_te)
     metricas_teste = metricas(y_te, prev_te)
 
+    # tabela caso a caso do teste (para análise, nunca para reescolher modelo)
+    regua_fab_te = fabrica("regua_fabricante").fit(X_tr, y_tr).predict(X_te)
+    regua_ult_te = fabrica("regua_ultimo_intervalo").fit(X_tr, y_tr).predict(X_te)
+    modelo_ml_prev = ajustar_final(melhor_ml).predict(X_te)
+    detalhe = pd.DataFrame({
+        "veiculo": X_te["veiculo"].values, "fonte": X_te["fonte"].values,
+        "data_ini": X_te["data_ini"].dt.date.values, "data_fim": X_te["data_fim"].dt.date.values,
+        "dias_reais": y_te.values,
+        "prev_escolhido": np.round(prev_te, 1), "erro_escolhido": np.round(np.abs(y_te.values - prev_te), 1),
+        "prev_fabricante_personalizado": np.round(regua_fab_te, 1), "erro_fabricante_personalizado": np.round(np.abs(y_te.values - regua_fab_te), 1),
+        "prev_ultimo_intervalo": np.round(regua_ult_te, 1), "erro_ultimo_intervalo": np.round(np.abs(y_te.values - regua_ult_te), 1),
+        "prev_melhor_ml": np.round(modelo_ml_prev, 1), "erro_melhor_ml": np.round(np.abs(y_te.values - modelo_ml_prev), 1),
+    })
+    PASTA_RELATORIO.mkdir(exist_ok=True)
+    detalhe.to_csv(PASTA_RELATORIO / "teste_detalhado.csv", index=False)
+
     # réguas e melhor ML também no teste, para o placar
     placar_teste = {nome_final: metricas_teste}
     modelo_ml = ajustar_final(melhor_ml)
     prev_te_ml = modelo_ml.predict(X_te)
-    for nome in ["regua_mediana", "regua_fabricante", "regua_ultimo_intervalo", "regua_media_reguas"]:
+    for nome in ["regua_cega", "regua_mediana", "regua_fabricante", "regua_ultimo_intervalo", "regua_media_reguas"]:
         if nome != nome_final:
             placar_teste[nome] = metricas(y_te, fabrica(nome).fit(X_tr, y_tr).predict(X_te))
     if melhor_ml != nome_final:
@@ -188,7 +261,9 @@ def main() -> None:
         print(f"  {nome:28s} MAE {m['mae_dias']:7.1f} | RMSE {m['rmse_dias']:7.1f} | MAPE {m['mape_pct']:5.1f}% | R² {m['r2']:6.3f}")
 
     # faixa de previsão (aula 1): s da validação cruzada, cobertura conferida no teste
-    s = residuo_tipico(y_tr, previsoes_cv[nome_final])
+    mascara_cv = ~np.isnan(previsoes_cv[nome_final])
+    y_cv = y_tr.to_numpy()[mascara_cv]
+    s = residuo_tipico(y_cv, previsoes_cv[nome_final][mascara_cv])
     margem = 2 * s
     cobertura_teste = float(np.mean(np.abs(y_te - prev_te) <= margem))
     print(f"\nResíduo típico s (validação): {s:.1f} dias | faixa ±{margem:.0f} dias cobre {100 * cobertura_teste:.0f}% do teste")
@@ -217,9 +292,9 @@ def main() -> None:
             print(f"  {k:22s} {v:+6.1f}")
 
     # ---------------- Etapa 10: decisão ----------------
-    oof_final = previsoes_cv[nome_final]
-    ant_padrao, custos_padrao = melhor_antecedencia(y_tr, oof_final, CUSTO_TARDE, CUSTO_CEDO)
-    ant_caro, custos_caro = melhor_antecedencia(y_tr, oof_final, CUSTO_TARDE, CUSTO_CEDO * 5)
+    oof_final = previsoes_cv[nome_final][mascara_cv]
+    ant_padrao, custos_padrao = melhor_antecedencia(y_cv, oof_final, CUSTO_TARDE, CUSTO_CEDO)
+    ant_caro, custos_caro = melhor_antecedencia(y_cv, oof_final, CUSTO_TARDE, CUSTO_CEDO * 5)
     print(f"\nDecisão: lembrar {ant_padrao} dias antes da data prevista (perda R$ {CUSTO_TARDE:.0f}, contato R$ {CUSTO_CEDO:.0f}); "
           f"se o contato custar R$ {CUSTO_CEDO * 5:.0f}, {ant_caro} dias.")
 
@@ -241,7 +316,7 @@ def main() -> None:
     ax.barh(nomes_cv, [resultados_cv[n]["mae_dias"] for n in nomes_cv],
             color=[("black" if n.startswith("regua") else COR) for n in nomes_cv])
     ax.axvline(resultados_cv[melhor_regua]["mae_dias"], color="black", linestyle="--")
-    ax.invert_yaxis(); ax.set_xlabel("MAE na validação cruzada (dias)"); ax.set_title("Réguas (preto) e modelos (marrom)")
+    ax.invert_yaxis(); ax.set_xlabel("MAE na validação cruzada temporal (dias)"); ax.set_title("Réguas (preto) e modelos (marrom)")
     fig.tight_layout(); fig.savefig(PASTA_RELATORIO / "validacao_cruzada.png"); plt.close(fig)
 
     # previsto x real e resíduos
@@ -280,7 +355,7 @@ def main() -> None:
 
     # ---------------- Artefato ----------------
     CAMINHO_MODELO.parent.mkdir(exist_ok=True)
-    s_ml = residuo_tipico(y_tr, previsoes_cv[melhor_ml])
+    s_ml = residuo_tipico(y_cv, previsoes_cv[melhor_ml][mascara_cv])
     joblib.dump({"modelo": modelo_final, "nome": nome_final, "conjunto": conjunto_final, "s": s,
                  "modelo_ml": modelo_ml, "nome_ml": melhor_ml, "s_ml": s_ml,
                  "regua_fabricante": ReguaFabricante().fit(X_tr), "regua_ultimo": ReguaUltimoIntervalo().fit(X_tr, y_tr)},
@@ -299,7 +374,13 @@ def main() -> None:
         "periodos": {"treino": [str(treino["data_fim"].min().date()), str(treino["data_fim"].max().date())],
                      "teste": [str(teste["data_fim"].min().date()), str(teste["data_fim"].max().date())]},
         "por_fonte": dados.groupby("fonte").size().to_dict(),
+        "validacao": {"tipo": "temporal, janela que expande (aula 5)",
+                      "dobras": [{"treino": int(len(tr)), "validacao": int(len(va))} for tr, va in folds],
+                      "intervalos_validados": n_validados,
+                      "dobras_estritas": [{"treino": int(len(tr)), "validacao": int(len(va))} for tr, va in folds_estritos]},
         "validacao_cruzada": resultados_cv,
+        "validacao_cruzada_estrita_checagem": resultados_estrita,
+        "validacao_cruzada_embaralhada_antes": resultados_embaralhado,
         "teste_final": placar_teste,
         "optuna": {"melhores_params": estudo.best_params, "melhor_mae": round(estudo.best_value, 2), "tentativas": N_TENTATIVAS_OPTUNA},
         "faixa": {"s_dias": round(s, 1), "margem_dias": round(margem, 1), "cobertura_teste": round(cobertura_teste, 3),
@@ -310,7 +391,7 @@ def main() -> None:
     }
     with open(CAMINHO_METRICAS, "w", encoding="utf-8") as f:
         json.dump(registro, f, ensure_ascii=False, indent=2, default=float)
-    print(f"\nModelo salvo em {CAMINHO_MODELO}\nMétricas em    {CAMINHO_METRICAS}\nGráficos em    {PASTA_RELATORIO}")
+    print(f"\nModelo salvo em {CAMINHO_MODELO}\nMétricas em    {CAMINHO_METRICAS}\nGráficos em    {PASTA_RELATORIO}\nTeste caso a caso em {PASTA_RELATORIO / 'teste_detalhado.csv'}")
 
 
 if __name__ == "__main__":

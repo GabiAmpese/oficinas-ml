@@ -148,6 +148,16 @@ class ReguaMediana:
         return np.full(len(X), self.mediana_)
 
 
+class ReguaCega:
+    """O lembrete que a oficina manda hoje: só os meses recomendados, igual para todos, sem olhar o km."""
+
+    def fit(self, X, y=None):
+        return self
+
+    def predict(self, X):
+        return X["intervalo_rec_meses"].to_numpy(dtype=float) * DIAS_POR_MES
+
+
 class ReguaFabricante:
     """dias = min(intervalo recomendado / taxa de uso, meses recomendados x 30,4)."""
 
