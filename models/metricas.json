@@ -1,17 +1,16 @@
 {
   "aviso": "Dados reais de quatro fontes, base pequena. Estudo dessas oficinas, sem generalização.",
-  "data_treino": "2026-11-19 16:39",
-  "modelo_escolhido": "regua_fabricante",
+  "data_treino": "2026-11-20 18:36",
+  "modelo_escolhido": "regua_media_reguas",
   "params_modelo": null,
-  "melhor_regua": "regua_fabricante",
-  "melhor_ml": "ridge_optuna",
+  "melhor_regua": "regua_media_reguas",
+  "melhor_ml": "ridge_cv_basico",
   "params_melhor_ml": {
-    "tipo": "ridge",
-    "alpha": 0.0010175068542526283,
-    "conjunto": "reguas",
-    "alvo": "log_dias"
+    "tipo": "ridge_cv",
+    "conjunto": "basico",
+    "alvo": "dias"
   },
-  "explicacao_de": "ridge_optuna",
+  "explicacao_de": "ridge_cv_basico",
   "tamanhos": {
     "treino": 47,
     "teste": 12,
@@ -34,7 +33,306 @@
     "LICA": 3,
     "PREFEITURA": 5
   },
+  "validacao": {
+    "tipo": "temporal, janela que expande (aula 5)",
+    "dobras": [
+      {
+        "treino": 10,
+        "validacao": 10
+      },
+      {
+        "treino": 20,
+        "validacao": 9
+      },
+      {
+        "treino": 29,
+        "validacao": 9
+      },
+      {
+        "treino": 38,
+        "validacao": 9
+      }
+    ],
+    "intervalos_validados": 37,
+    "dobras_estritas": [
+      {
+        "treino": 20,
+        "validacao": 9
+      },
+      {
+        "treino": 22,
+        "validacao": 9
+      },
+      {
+        "treino": 27,
+        "validacao": 9
+      }
+    ]
+  },
   "validacao_cruzada": {
+    "regua_cega": {
+      "mae_dias": 175.77,
+      "rmse_dias": 210.43,
+      "mape_pct": 206.4,
+      "r2": -2.778,
+      "n": 37
+    },
+    "regua_mediana": {
+      "mae_dias": 86.7,
+      "rmse_dias": 127.28,
+      "mape_pct": 49.7,
+      "r2": -0.382,
+      "n": 37
+    },
+    "regua_fabricante": {
+      "mae_dias": 72.92,
+      "rmse_dias": 117.31,
+      "mape_pct": 38.2,
+      "r2": -0.174,
+      "n": 37
+    },
+    "regua_ultimo_intervalo": {
+      "mae_dias": 79.24,
+      "rmse_dias": 123.24,
+      "mape_pct": 54.3,
+      "r2": -0.296,
+      "n": 37
+    },
+    "regua_media_reguas": {
+      "mae_dias": 63.14,
+      "rmse_dias": 103.23,
+      "mape_pct": 38.6,
+      "r2": 0.091,
+      "n": 37
+    },
+    "linear_reguas": {
+      "mae_dias": 73.88,
+      "rmse_dias": 108.88,
+      "mape_pct": 51.5,
+      "r2": -0.011,
+      "n": 37
+    },
+    "ridge_cv_reguas": {
+      "mae_dias": 64.97,
+      "rmse_dias": 100.16,
+      "mape_pct": 44.6,
+      "r2": 0.144,
+      "n": 37
+    },
+    "lasso_cv_reguas": {
+      "mae_dias": 71.3,
+      "rmse_dias": 107.67,
+      "mape_pct": 48.5,
+      "r2": 0.011,
+      "n": 37
+    },
+    "elasticnet_cv_reguas": {
+      "mae_dias": 69.31,
+      "rmse_dias": 104.97,
+      "mape_pct": 46.8,
+      "r2": 0.06,
+      "n": 37
+    },
+    "linear_basico": {
+      "mae_dias": 92.58,
+      "rmse_dias": 124.85,
+      "mape_pct": 72.9,
+      "r2": -0.33,
+      "n": 37
+    },
+    "ridge_cv_basico": {
+      "mae_dias": 63.15,
+      "rmse_dias": 95.36,
+      "mape_pct": 41.8,
+      "r2": 0.224,
+      "n": 37
+    },
+    "lasso_cv_basico": {
+      "mae_dias": 67.5,
+      "rmse_dias": 104.75,
+      "mape_pct": 45.4,
+      "r2": 0.064,
+      "n": 37
+    },
+    "elasticnet_cv_basico": {
+      "mae_dias": 67.2,
+      "rmse_dias": 100.89,
+      "mape_pct": 43.2,
+      "r2": 0.132,
+      "n": 37
+    },
+    "linear_completo": {
+      "mae_dias": 160.86,
+      "rmse_dias": 230.41,
+      "mape_pct": 112.5,
+      "r2": -3.529,
+      "n": 37
+    },
+    "ridge_cv_completo": {
+      "mae_dias": 65.1,
+      "rmse_dias": 95.55,
+      "mape_pct": 46.1,
+      "r2": 0.221,
+      "n": 37
+    },
+    "lasso_cv_completo": {
+      "mae_dias": 80.42,
+      "rmse_dias": 130.39,
+      "mape_pct": 54.3,
+      "r2": -0.45,
+      "n": 37
+    },
+    "elasticnet_cv_completo": {
+      "mae_dias": 73.15,
+      "rmse_dias": 112.26,
+      "mape_pct": 50.6,
+      "r2": -0.075,
+      "n": 37
+    },
+    "ridge_cv_delta_basico": {
+      "mae_dias": 90.73,
+      "rmse_dias": 137.86,
+      "mape_pct": 45.8,
+      "r2": -0.621,
+      "n": 37
+    },
+    "ridge_optuna": {
+      "mae_dias": 64.91,
+      "rmse_dias": 108.14,
+      "mape_pct": 34.8,
+      "r2": 0.002,
+      "n": 37
+    }
+  },
+  "validacao_cruzada_estrita_checagem": {
+    "regua_cega": {
+      "mae_dias": 141.53,
+      "rmse_dias": 182.62,
+      "mape_pct": 153.8,
+      "r2": -1.547,
+      "n": 27
+    },
+    "regua_mediana": {
+      "mae_dias": 105.89,
+      "rmse_dias": 151.1,
+      "mape_pct": 45.1,
+      "r2": -0.744,
+      "n": 27
+    },
+    "regua_fabricante": {
+      "mae_dias": 89.82,
+      "rmse_dias": 135.89,
+      "mape_pct": 43.0,
+      "r2": -0.41,
+      "n": 27
+    },
+    "regua_ultimo_intervalo": {
+      "mae_dias": 82.22,
+      "rmse_dias": 128.82,
+      "mape_pct": 39.2,
+      "r2": -0.268,
+      "n": 27
+    },
+    "regua_media_reguas": {
+      "mae_dias": 84.23,
+      "rmse_dias": 131.79,
+      "mape_pct": 39.9,
+      "r2": -0.327,
+      "n": 27
+    },
+    "linear_reguas": {
+      "mae_dias": 88.63,
+      "rmse_dias": 128.27,
+      "mape_pct": 44.4,
+      "r2": -0.257,
+      "n": 27
+    },
+    "ridge_cv_reguas": {
+      "mae_dias": 83.95,
+      "rmse_dias": 124.65,
+      "mape_pct": 41.3,
+      "r2": -0.187,
+      "n": 27
+    },
+    "lasso_cv_reguas": {
+      "mae_dias": 87.68,
+      "rmse_dias": 127.89,
+      "mape_pct": 43.6,
+      "r2": -0.249,
+      "n": 27
+    },
+    "elasticnet_cv_reguas": {
+      "mae_dias": 85.82,
+      "rmse_dias": 127.14,
+      "mape_pct": 43.8,
+      "r2": -0.235,
+      "n": 27
+    },
+    "linear_basico": {
+      "mae_dias": 106.19,
+      "rmse_dias": 138.11,
+      "mape_pct": 63.5,
+      "r2": -0.457,
+      "n": 27
+    },
+    "ridge_cv_basico": {
+      "mae_dias": 85.37,
+      "rmse_dias": 121.67,
+      "mape_pct": 46.7,
+      "r2": -0.131,
+      "n": 27
+    },
+    "lasso_cv_basico": {
+      "mae_dias": 89.95,
+      "rmse_dias": 127.85,
+      "mape_pct": 46.7,
+      "r2": -0.248,
+      "n": 27
+    },
+    "elasticnet_cv_basico": {
+      "mae_dias": 91.57,
+      "rmse_dias": 127.85,
+      "mape_pct": 49.6,
+      "r2": -0.248,
+      "n": 27
+    },
+    "linear_completo": {
+      "mae_dias": 271.99,
+      "rmse_dias": 394.38,
+      "mape_pct": 180.4,
+      "r2": -10.88,
+      "n": 27
+    },
+    "ridge_cv_completo": {
+      "mae_dias": 111.12,
+      "rmse_dias": 149.21,
+      "mape_pct": 70.7,
+      "r2": -0.7,
+      "n": 27
+    },
+    "lasso_cv_completo": {
+      "mae_dias": 178.86,
+      "rmse_dias": 242.09,
+      "mape_pct": 112.9,
+      "r2": -3.476,
+      "n": 27
+    },
+    "elasticnet_cv_completo": {
+      "mae_dias": 148.83,
+      "rmse_dias": 214.11,
+      "mape_pct": 93.4,
+      "r2": -2.502,
+      "n": 27
+    }
+  },
+  "validacao_cruzada_embaralhada_antes": {
+    "regua_cega": {
+      "mae_dias": 189.79,
+      "rmse_dias": 219.39,
+      "mape_pct": 224.7,
+      "r2": -1.941,
+      "n": 47
+    },
     "regua_mediana": {
       "mae_dias": 91.18,
       "rmse_dias": 140.3,
@@ -146,28 +444,21 @@
       "mape_pct": 54.5,
       "r2": 0.453,
       "n": 47
-    },
-    "ridge_cv_delta_basico": {
-      "mae_dias": 68.5,
-      "rmse_dias": 100.3,
-      "mape_pct": 38.5,
-      "r2": 0.385,
-      "n": 47
-    },
-    "ridge_optuna": {
-      "mae_dias": 56.83,
-      "rmse_dias": 89.93,
-      "mape_pct": 36.1,
-      "r2": 0.506,
-      "n": 47
     }
   },
   "teste_final": {
-    "regua_fabricante": {
-      "mae_dias": 30.64,
-      "rmse_dias": 38.82,
-      "mape_pct": 27.1,
-      "r2": 0.886,
+    "regua_media_reguas": {
+      "mae_dias": 30.65,
+      "rmse_dias": 39.04,
+      "mape_pct": 26.3,
+      "r2": 0.884,
+      "n": 12
+    },
+    "regua_cega": {
+      "mae_dias": 127.47,
+      "rmse_dias": 177.27,
+      "mape_pct": 219.1,
+      "r2": -1.384,
       "n": 12
     },
     "regua_mediana": {
@@ -177,6 +468,13 @@
       "r2": -0.119,
       "n": 12
     },
+    "regua_fabricante": {
+      "mae_dias": 30.64,
+      "rmse_dias": 38.82,
+      "mape_pct": 27.1,
+      "r2": 0.886,
+      "n": 12
+    },
     "regua_ultimo_intervalo": {
       "mae_dias": 33.17,
       "rmse_dias": 44.94,
@@ -184,110 +482,107 @@
       "r2": 0.847,
       "n": 12
     },
-    "regua_media_reguas": {
-      "mae_dias": 30.65,
-      "rmse_dias": 39.04,
-      "mape_pct": 26.3,
-      "r2": 0.884,
-      "n": 12
-    },
-    "ridge_optuna": {
-      "mae_dias": 29.62,
-      "rmse_dias": 34.37,
-      "mape_pct": 36.3,
-      "r2": 0.91,
+    "ridge_cv_basico": {
+      "mae_dias": 33.97,
+      "rmse_dias": 46.26,
+      "mape_pct": 42.8,
+      "r2": 0.838,
       "n": 12
     }
   },
   "optuna": {
     "melhores_params": {
-      "alpha": 0.0010175068542526283,
+      "alpha": 1.532594095074674,
       "conjunto": "reguas",
       "alvo": "log_dias"
     },
-    "melhor_mae": 56.83,
+    "melhor_mae": 64.91,
     "tentativas": 40
   },
   "faixa": {
-    "s_dias": 85.8,
-    "margem_dias": 171.6,
+    "s_dias": 106.1,
+    "margem_dias": 212.3,
     "cobertura_teste": 1.0,
-    "s_ml_dias": 91.9
+    "s_ml_dias": 98.0
   },
   "importancias": {
-    "intervalo_ant_dias": -1.57,
-    "fonte": 16.93,
-    "intervalo_rec_unid": 27.42,
-    "taxa_uso_ant": 72.42,
-    "intervalo_rec_meses": 75.33
+    "n_trocas_ant": -1.1,
+    "tipo_oleo": 0.49,
+    "dias_regra": 3.84,
+    "unidade": 10.73,
+    "fonte": 12.94,
+    "intervalo_rec_unid": 14.23,
+    "intervalo_ant_dias": 17.15,
+    "intervalo_rec_meses": 23.37,
+    "taxa_uso_ant": 32.91
   },
   "decisao": {
     "custo_tarde": 150.0,
     "custo_cedo": 15.0,
-    "antecedencia_dias": 60,
-    "antecedencia_contato_caro": 23,
+    "antecedencia_dias": 55,
+    "antecedencia_contato_caro": 14,
     "custos_por_antecedencia": [
-      2280,
-      2130,
-      1980,
-      1980,
-      1980,
-      1995,
-      2025,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1740,
-      1590,
-      1590,
-      1590,
-      1440,
+      2085,
+      2085,
+      1785,
+      1785,
+      1650,
+      1650,
+      1650,
+      1665,
+      1665,
+      1665,
+      1665,
+      1665,
+      1665,
+      1665,
+      1515,
+      1515,
+      1515,
+      1530,
+      1530,
+      1530,
+      1575,
+      1425,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1275,
+      1290,
       1305,
-      1305,
+      1320,
       1335,
       1365,
-      1365,
-      1065,
-      1095,
-      1095,
+      1215,
+      1215,
+      1215,
+      1215,
+      1215,
+      1215,
+      1230,
       1095,
       1110,
+      1110,
       1125,
+      1140,
       1155,
       1155,
       1155,
       1155,
       1155,
-      900,
-      750,
-      780,
-      780,
-      780,
-      780,
-      795,
-      810,
-      825,
-      825,
-      825,
-      825,
-      825,
-      855,
-      855,
-      855,
-      855,
-      855,
-      855,
-      855,
-      855,
-      705
+      1155,
+      1005,
+      1005,
+      1005,
+      1005,
+      1020,
+      1020
     ]
   }
 }
