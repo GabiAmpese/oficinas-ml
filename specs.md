@@ -47,7 +47,7 @@ Regra de limpeza do serviço: é troca de óleo toda linha cuja descrição cont
 Um exemplo = duas trocas de óleo consecutivas do mesmo veículo, ambas com leitura. Para cada intervalo:
 
 - `data_ini, leitura_ini, data_fim, leitura_fim, dias, delta_unid`
-- `situacao`: `valido` (0 < delta ≤ 15.000 km, ou ≤ 600 h, e ≤ 730 dias), `perdida` (delta acima do limite ou mais de 2 anos sem registro: houve troca em outro lugar, regra informada pela Cirocar), `erro` (delta ≤ 0 ou dias ≤ 0). Só `valido` entra no treino.
+- `situacao`: `valido` (0 < delta ≤ 15.000 km, ou ≤ 600 h, e ≤ 730 dias), `perdida` (acima desses limites: provável troca em outro lugar; hipótese de tratamento baseada na experiência da Cirocar, sem confirmação individual), `erro` (delta ≤ 0 ou dias ≤ 0). Só `valido` entra no treino.
 
 Features, **calculadas só com informação disponível em `data_ini`** (sem vazamento):
 
@@ -65,14 +65,15 @@ Alvo principal: **`dias`** (dias até a próxima troca). Alvo alternativo testad
 
 ## 4. Separação (etapa 3)
 
-Ordenar intervalos por `data_fim`. **Teste final = últimos 20%**, trancado até a etapa 8. No treino, validação cruzada `KFold(5, shuffle, random_state=42)` para escolher modelos e hiperparâmetros (aula 4). Pré-processamento aprendido só no treino, dentro do `Pipeline`.
+Ordenar intervalos por `data_fim`. **Teste final = últimos 20%**, trancado até a etapa 8. No treino, **validação cruzada temporal com janela que expande** (aula 5): 5 blocos cronológicos, o bloco k valida e os anteriores treinam; nenhum intervalo de treino termina depois do fim de um de validação (mesma regra do teste final). Uma variante estrita (treino só com intervalos terminados antes do início do bloco) e a `KFold` embaralhada são rodadas apenas para comparação no relatório. Pré-processamento aprendido só no treino, dentro do `Pipeline`.
 
 O mesmo veículo pode aparecer no treino e no teste: na prática o sistema é usado com clientes conhecidos. Isso é dito no relatório.
 
 ## 5. Linhas de base (etapa 4)
 
-Três réguas, todas avaliadas em dias:
+Cinco réguas, todas avaliadas em dias:
 
+0. **Regra cega do fabricante**: só os meses recomendados, igual para todos (o lembrete atual da oficina).
 1. **Mediana do treino**: todo intervalo dura a mediana.
 2. **Regra do fabricante**: `dias = min(intervalo_rec_unid / taxa_uso, intervalo_rec_meses × 30,4)`; `taxa_uso` é `taxa_uso_ant` ou, se vazia, a mediana da fonte no treino.
 3. **Repete o último intervalo**: `intervalo_ant_dias`; se vazio, mediana da fonte no treino. (Equivale à "sazonal ingênua" da aula 5 e é a régua mais difícil de bater.)
@@ -94,7 +95,7 @@ Três conjuntos de features, para a ablação da aula 2:
 
 Optuna (`TPESampler(seed=42)`, 40 tentativas) maximiza `−MAE` médio na validação cruzada do treino, escolhendo: `alpha` do Ridge (log, 1e-3 a 1e3), conjunto de features (`basico`/`completo`) e alvo (`dias` ou `log(dias)`).
 
-Modelo final = menor MAE na validação cruzada entre todas as réguas e modelos. Uma régua pode vencer.
+Modelo final = menor MAE na validação cruzada temporal entre todas as réguas e modelos; em empate (menos de 0,5 dia), a opção mais simples. Uma régua pode vencer.
 
 ## 8. Prova final (etapa 8)
 
@@ -112,7 +113,7 @@ A oficina escolhe **com quantos dias de antecedência** mandar o lembrete. Com `
 - custo_tarde: carros que voltaram antes de `prevista − a` (lembrete chegou depois) × R$ custo_perda;
 - custo_cedo: lembretes enviados mais de 45 dias antes do retorno real × R$ custo_contato.
 
-Melhor `a` = menor custo total. Mostrar que `a` muda quando os custos mudam.
+Melhor `a` = menor custo total. Os custos são hipotéticos, escolhidos para demonstrar o mecanismo; mostrar que `a` muda quando eles mudam.
 
 ## 11. Simulação (etapa 11)
 
@@ -120,7 +121,7 @@ Função `simular(intervalo, **mudancas)` que copia um caso, altera uma coluna (
 
 ## 12. Aplicação (Streamlit)
 
-1. **Lista da semana**: para cada veículo, última troca conhecida, previsão de retorno (data e faixa), dias até vencer, status (vence em X dias / vencido), origem de cada número (previsão do modelo / regra cadastrada / informado).
+1. **Lista da semana**: para cada veículo, última troca conhecida, previsão de retorno (data e faixa), dias até a data prevista, status (contatar agora / no prazo / retorno previsto ultrapassado), origem de cada número (previsão do modelo / regra cadastrada / informado).
 2. **Simulador "e se"**: escolhe um veículo, mexe nos controles, vê a previsão mudar.
 3. **Sobre o modelo**: placar, métricas de validação e teste, importâncias, gráficos, decisão por custo e limitações.
 
