@@ -14,7 +14,7 @@ Quatro fontes reais, pseudonimizadas (código no lugar de placa e cliente): ofic
 pip install -r requirements.txt
 python src/preparar_dados.py   # lê data/brutos/*.xlsx, gera data/visitas.csv e data/intervalos.csv
 python src/treinar.py          # réguas, modelos, Optuna, prova final, gráficos, models/
-pytest                         # 16 testes
+pytest                         # 19 testes
 streamlit run app/app.py       # painel da oficina
 ```
 
@@ -29,6 +29,7 @@ models/          modelo_retorno.joblib (regra escolhida + melhor ML) e metricas.
 app/             app.py (Streamlit)
 tests/           pytest
 relatorio/       relatorio.md, gráficos e padroes_do_curso.md
+docs/            arquitetura, critérios de aceite e limites de segurança/implantação
 .github/         testes automáticos a cada push (GitHub Actions)
 CONTRIBUTING.md  como o grupo contribui
 ```

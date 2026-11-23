@@ -179,7 +179,7 @@ Há duas perguntas diferentes. **Quando o óleo deve ser trocado** depende da re
 
 ## 14. Testes
 
-16 testes automatizados (`pytest`): regra de serviço; lista de exclusão; unidade em horas e marcação de frota; intervalo válido, perdido (por km e por dias) e erro; features sem vazamento com datas calculadas à mão; réguas com resultado calculado à mão; regra cega; dobras temporais sem vazamento (treino sempre termina antes da validação); pipeline aceita categoria desconhecida; métricas e resíduo; custo por antecedência; artefato carrega, prevê e simula; registro do split temporal. Execução ponta a ponta (`python executar_tudo.py`) rodando do zero em menos de 30 segundos. O GitHub roda tudo isso a cada commit.
+19 testes automatizados (`pytest`): regra de serviço; lista de exclusão; unidade em horas e marcação de frota; intervalo válido, perdido (por km e por dias) e erro; features sem vazamento com datas calculadas à mão; réguas com resultado calculado à mão; regra cega; dobras temporais sem vazamento (treino sempre termina antes da validação); pipeline aceita categoria desconhecida; métricas e resíduo; custo por antecedência; artefato carrega, prevê e simula; registro do split temporal; dobras estritas não usam resultados futuros; réguas sem histórico usam o limite em meses ou a mediana da fonte. Execução ponta a ponta (`python executar_tudo.py`) rodando do zero em menos de 30 segundos. O GitHub roda tudo isso a cada commit.
 
 ## 15. Objetivos alcançados e não alcançados
 
@@ -235,7 +235,7 @@ python executar_tudo.py --app
 1. `specs.md`, seção 2: a pergunta da oficina e o custo de cada erro.
 2. `python src/preparar_dados.py`: mostrar as células vazias e a contagem de intervalos válidos, perdidos e erro.
 3. `python src/treinar.py`: as dobras temporais, a tabela da validação (réguas em preto, modelos em marrom), a escolha, a prova final e a importância.
-4. `pytest`: 16 testes.
+4. `pytest`: 19 testes.
 5. App, Lista da semana: mudar a antecedência e ver a lista de "contatar agora" mudar; alternar regra e ML.
 6. App, Simulador: pegar o Mobi de aplicativo (AMPESE_V004, 139 km/dia), baixar o ritmo de uso para 20 km/dia e ver a previsão mudar.
 7. App, Sobre o modelo: placar, faixa, decisão por custo, limitações.

@@ -137,7 +137,8 @@ oficinas-ml/
   src/preparar_dados.py   src/modelos.py   src/treinar.py
   models/modelo_retorno.joblib  models/metricas.json
   app/app.py
-  tests/test_preparar.py  tests/test_modelos.py
+  tests/test_preparar.py  tests/test_modelos.py  tests/test_qualidade_adicional.py
+  docs/arquitetura.md  docs/criterios_aceite.md  docs/seguranca_implantacao.md
   relatorio/relatorio.md  relatorio/*.png  relatorio/padroes_do_curso.md
 ```
 
