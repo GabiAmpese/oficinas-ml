@@ -60,6 +60,8 @@ Intervalos ordenados pela data da troca seguinte. **Teste final: os últimos 20%
 
 **Validação cruzada temporal (aula 5), com janela que expande.** Os 47 intervalos do treino, em ordem de data, são divididos em 5 blocos cronológicos. O bloco k é a validação e o treino são todos os blocos anteriores: dobras de 10 → 10, 20 → 9, 29 → 9 e 38 → 9 (treino → validação). Nenhum intervalo de treino termina depois do fim de um intervalo de validação (conferido por `assert` no código e por teste automatizado). É a mesma regra do teste final, então validação e teste medem a mesma coisa. 37 dos 47 intervalos recebem previsão fora da dobra; os 10 primeiros só treinam.
 
+Limitação reconhecida: a validação oficial corta pela data de fim dos intervalos. Um intervalo de treino de outro veículo pode ter terminado depois do início de um intervalo de validação; na prática, naquele momento, ele ainda não estaria concluído. A variante estrita abaixo corrige isso e chegou à mesma conclusão (régua 84,2 contra Ridge 85,4), por isso a reconhecemos como limitação sem reestruturar o projeto.
+
 Duas outras validações foram rodadas só para comparação, sem decidir nada: uma **estrita** (o treino do bloco k são apenas os intervalos que já tinham terminado antes do início do primeiro intervalo do bloco; dobras 20 → 9, 22 → 9, 27 → 9) e a **embaralhada** (`KFold` com `shuffle`, nossa primeira versão, que deixava intervalos do futuro ajudarem a prever o passado e foi substituída depois da revisão do grupo).
 
 O mesmo veículo pode aparecer no treino e no teste porque, na prática, o sistema é usado com clientes conhecidos. As features de cada intervalo usam só visitas anteriores à sua data de início, então o resultado de um intervalo nunca entra como informação de outro.
