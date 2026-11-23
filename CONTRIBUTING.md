@@ -46,6 +46,7 @@ git add . && git commit -m "Corrige texto da seção 5 do relatório" && git pus
 | Mudar o limite de "troca perdida" ou os intervalos padrão | constantes no topo de `src/preparar_dados.py` |
 | Mudar os custos da decisão (R$ do serviço perdido e do contato) | `CUSTO_TARDE` e `CUSTO_CEDO` em `src/treinar.py` |
 | Testar outro modelo ou outras features | `src/modelos.py` (`FEATURES`, `construir_modelo`) e a lista `candidatos` em `src/treinar.py` |
+| Mudar o número de blocos da validação temporal | `dobras_temporais` em `src/treinar.py` |
 | Mudar o painel | `app/app.py` |
 | Mudar o relatório | `relatorio/relatorio.md` |
 

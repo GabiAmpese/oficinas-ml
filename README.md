@@ -14,7 +14,7 @@ Quatro fontes reais, pseudonimizadas (código no lugar de placa e cliente): ofic
 pip install -r requirements.txt
 python src/preparar_dados.py   # lê data/brutos/*.xlsx, gera data/visitas.csv e data/intervalos.csv
 python src/treinar.py          # réguas, modelos, Optuna, prova final, gráficos, models/
-pytest                         # 13 testes
+pytest                         # 16 testes
 streamlit run app/app.py       # painel da oficina
 ```
 
@@ -35,7 +35,7 @@ CONTRIBUTING.md  como o grupo contribui
 
 ## Resultado em uma frase
 
-A regra cega do fabricante ("todo carro volta em X meses") erra 190 dias na validação e 127 no teste. Dividir o km recomendado pelo km por dia de cada carro (a ideia do grupo) derruba o erro para 53 e 31 dias; o melhor modelo de ML (Ridge sobre as réguas, ajustado por Optuna) empata: 57 e 30 dias. O ganho grande vem da personalização pelo ritmo de uso, e isso é dito no relatório.
+A regra cega do fabricante ("todo carro volta em X meses") erra 176 dias na validação temporal e 127 no teste. Dividir o km recomendado pelo km por dia de cada carro (a ideia do grupo) e combinar com o hábito do cliente derruba o erro para 63 e 31 dias; o melhor modelo de ML (Ridge) empata na validação (63) e fica um pouco atrás no teste (34). O ganho grande vem da personalização pelo ritmo de uso, e isso é dito no relatório.
 
 ## Integrantes
 

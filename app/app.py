@@ -37,6 +37,9 @@ NOMES = {
     "regua_fabricante": "Regra do fabricante",
     "regua_ultimo_intervalo": "Repete o último intervalo",
     "regua_mediana": "Mediana do treino",
+    "regua_cega": "Regra cega do fabricante (como a oficina faz hoje)",
+    "ridge_cv_basico": "Ridge (features básicas)",
+    "ridge_optuna": "Ridge ajustado por Optuna",
 }
 
 
@@ -120,6 +123,8 @@ def aviso_rodape():
 # ---------------------------------------------------------------------------
 def pagina_lista(art, met, visitas, intervalos):
     st.title("Lista da semana: quem contatar para a troca de óleo")
+    st.caption("O sistema prevê quando o cliente costuma voltar, com base no histórico. Quando o óleo deve ser trocado "
+               "tecnicamente é a recomendação do fabricante; a decisão final é do mecânico.")
     hoje = st.date_input("Data de referência", value=date(2026, 11, 19))
     col1, col2 = st.columns(2)
     usar_ml = col1.radio("Previsão com", ["Regra escolhida na validação", "Melhor modelo de ML"], horizontal=True) == "Melhor modelo de ML"
@@ -148,18 +153,18 @@ def pagina_lista(art, met, visitas, intervalos):
 
     def status(row):
         if row["data_prevista"] < hoje_ts:
-            return "🔴 vencido"
+            return "🔴 retorno previsto ultrapassado"
         if row["data_lembrete"] <= hoje_ts:
             return "🟡 contatar agora"
         return "🟢 no prazo"
     atual["status"] = atual.apply(status, axis=1)
-    ordem = {"🟡 contatar agora": 0, "🔴 vencido": 1, "🟢 no prazo": 2}
+    ordem = {"🟡 contatar agora": 0, "🔴 retorno previsto ultrapassado": 1, "🟢 no prazo": 2}
     atual = atual.sort_values(["status", "data_prevista"], key=lambda c: c.map(ordem) if c.name == "status" else c)
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Veículos acompanhados", len(atual))
     c2.metric("Contatar agora", int((atual["status"] == "🟡 contatar agora").sum()))
-    c3.metric("Vencidos", int((atual["status"] == "🔴 vencido").sum()))
+    c3.metric("Retorno previsto ultrapassado", int((atual["status"] == "🔴 retorno previsto ultrapassado").sum()))
     c4.metric("Ocultos (sumidos)", sumidos)
 
     exibir = atual[["status", "oficina", "veiculo", "marca", "modelo", "data_ini", "leitura_ini", "unidade",
@@ -218,7 +223,10 @@ def pagina_modelo(met):
 - **Por fonte:** {met['por_fonte']}
 """)
 
-    st.markdown("#### Validação cruzada no treino (5 dobras)")
+    v = met.get("validacao", {})
+    st.markdown(f"#### Validação cruzada temporal no treino ({v.get('tipo', '')})")
+    st.caption("Dobras (treino → validação): " + " | ".join(f"{d['treino']} → {d['validacao']}" for d in v.get("dobras", []))
+               + f". Nenhum intervalo de treino termina depois de um de validação. {v.get('intervalos_validados', '')} intervalos validados.")
     cv = pd.DataFrame(met["validacao_cruzada"]).T.sort_values("mae_dias")
     cv.index = [nome_bonito(i) for i in cv.index]
     st.dataframe(cv.rename(columns={"mae_dias": "MAE (dias)", "rmse_dias": "RMSE", "mape_pct": "MAPE %", "r2": "R²", "n": "n"}), width="stretch")
@@ -240,8 +248,8 @@ def pagina_modelo(met):
     d = met["decisao"]
     st.markdown(f"""
 #### Decisão
-Com perda do serviço a R$ {d['custo_tarde']:.0f} e contato a R$ {d['custo_cedo']:.0f}, a menor soma de erros é lembrar **{d['antecedencia_dias']} dias antes** da data prevista.
-Se o contato custar 5 vezes mais, passa para {d['antecedencia_contato_caro']} dias. O modelo estima a data; a antecedência é decisão da oficina.
+Os custos são **hipotéticos**, escolhidos para demonstrar a decisão: perda do serviço a R$ {d['custo_tarde']:.0f} e contato a R$ {d['custo_cedo']:.0f}. Com eles, a menor soma de erros é lembrar **{d['antecedencia_dias']} dias antes** da data prevista.
+Se o contato custar 5 vezes mais, passa para {d['antecedencia_contato_caro']} dias. O que importa é o mecanismo: a oficina coloca os custos dela e a antecedência sai sozinha. O modelo estima a data; a antecedência é decisão da oficina.
 
 #### Limitações
 - Base pequena, de quatro fontes; uma delas (máquinas da prefeitura) medida em horas.
